@@ -6,8 +6,8 @@ config.json
 .htaccess
 
 # Directories
-/.idea
-/.sass-cache
+.idea/
+.sass-cache/
 
 # compiled css
 assets/stylesheets/style.css
