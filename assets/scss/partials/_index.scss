@@ -1,0 +1,210 @@
+.main{
+    background-image: url(../images/template_images/landing.jpg);
+    background-size: cover;
+    height: auto;
+    width: 100%;
+
+    .middlewrap {
+        color: $base-light;
+        margin: 0 auto;
+        max-width: 1000px;
+        position: static;
+        padding-top: 210px;
+        padding-bottom: 65px;
+        text-align: left;
+
+        h1{
+            line-height: 1;
+        }
+
+        h3{
+            margin: 20px 0 35px 0;
+        }
+    }
+}
+
+.about{
+    background-color: $base-dark;
+    height: auto;
+    padding: 65px 0;
+    width: 100%;
+
+    .aboutwrap{
+        margin: 0 auto;
+        max-width: 1000px;
+
+        p{
+            color: $base-light;
+            line-height: 32px;
+            position: relative;
+            text-align: left;
+
+            a{
+                border-bottom: 2px solid $sub-base;
+                color: $sub-base;
+                margin-left: 4px;
+                padding-bottom: 4px;
+                transition: padding 0.3s ease;
+                white-space: nowrap;
+
+                &:hover{
+                    padding-bottom: 6px;
+                }
+            }
+        }
+    }
+}
+
+.options{
+    background-color: #FBFBFB;;
+    height: auto;
+    padding: 100px 0 60px 0;
+    width: 100%;
+
+    .optionswrap{
+        margin: 0 auto;
+        max-width: 1000px;
+
+        .flex{
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            .option{
+                color: $base-dark;
+                height: 275px;
+                margin-bottom: 60px;
+                position: relative;
+                text-align: center;
+                transition: border 0.3s ease;
+                width: 31%;
+
+                &:hover{
+
+                    .option-image{
+                        border: 2px solid $sub-base;
+                        box-shadow: 0 12px 13px 0 rgba(30,30,30,0.05);
+                    }
+                }
+
+                .option-image{
+                    border: 2px solid rgba(14,14,29,0.05);
+                    border-radius: 50px;
+                    background-color: #FFFFFF;
+                    box-shadow: 0 2px 3px 0 rgba(30,30,30,0.05);
+                    height: 84px;
+                    margin: 0 auto;
+                    transition: border 0.3s ease, box-shadow 0.3s ease;
+                    width: 84px;
+
+                    img{
+                        position: relative;
+                        margin: 27px 0;
+                    }
+                }
+
+                h2{
+                    font-size: 22px;
+                    padding: 25px 0px;
+                }
+
+                p{
+                    font-size: 14px;
+                    line-height: 22px;
+                    padding: 0 45px;
+                }
+
+                .option-link{
+                    color: $sub-base;
+                    font-size: 16px;
+                    line-height: 70px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: $mobile-width-400){
+    .main{
+
+        .middlewrap{
+
+            h1{
+                font-size: 45px;
+            }
+            h3{
+                font-size: 19px;
+                margin: 30px 0;
+            }
+        }
+    }
+
+    .about{
+        padding: 30px 0;
+
+        .aboutwrap{
+            padding: 0 4%;
+
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+
+    .optionswrap{
+        padding: 0 6%;
+    }
+
+}
+
+@media screen and (max-width: $mobile-card-breakpoint){
+    .options{
+
+        .optionswrap{
+
+            .flex{
+
+                .option{
+                    width: 48%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile-card-breakpoint-2){
+    .options{
+
+        .optionswrap{
+
+            .flex{
+
+                .option{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: $mobile-max-width){
+    .middlewrap{
+        padding: 0 6%;
+    }
+    .aboutwrap{
+        padding: 0 6%;
+    }
+    .optionswrap{
+        padding: 0 6%;
+    }
+}

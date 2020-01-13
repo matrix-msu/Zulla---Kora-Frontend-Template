@@ -1,0 +1,13 @@
+# bootstrap
+config.php
+config.json
+
+# htaccess files
+.htaccess
+
+# Directories
+/.idea
+/.sass-cache
+
+# compiled css
+assets/stylesheets/style.css

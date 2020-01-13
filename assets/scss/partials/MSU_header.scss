@@ -1,0 +1,403 @@
+.MSUwrapper {
+  width: 89%;
+  margin-left: 6%;
+  margin-right: 6%;
+	max-width: 990px;
+	margin: 0 auto;
+	clear: both;
+	font-family: 'Gotham SSm A', 'Gotham SSm B', arial, sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	font-size: 1rem;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+#header-center-aligner {
+  width: 89%;
+  margin-left: 6%;
+  margin-right: 6%;
+  max-width: 990px;
+  margin: 0 auto;
+  height: 60px;
+  clear: both;
+  font-family: 'Gotham SSm A', 'Gotham SSm B', arial, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#MSUheader {
+	height: 37px;
+  padding-top: 30px;
+}
+#MSUmasthead {
+	float: left;
+	position: relative;
+	img.msugraphic-green {
+		padding-top: 12px;
+		display: block;
+	}
+	img.msugraphic-white {
+		padding-top: 12px;
+		display: none;
+	}
+	img.print-msugraphic {
+		display: none;
+	}
+}
+#MSUSearchTool {
+	form {
+		.hide {
+			position: absolute;
+			left: -9999px;
+		}
+	}
+	float: right;
+	position: relative;
+	#search-tool-box {
+		height: 28px;
+		width: 319px;
+		float: right;
+		border: 1px solid rgba(255,255,255,0.6);
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		font-family: 'Gotham SSm A', 'Gotham SSm B', arial, sans-serif;
+
+    &:hover{
+		    border: 1px solid rgba(255,255,255,1);
+      }
+	}
+	#btn_search {
+		height: 28px;
+		width: 34px;
+		cursor: pointer;
+		outline: 0px none;
+		border: 0px none;
+		float: right;
+		margin: 0 auto;
+		text-indent: -9999px;
+		text-transform: capitalize;
+		-webkit-border-radius: 0px 3px 3px 0px;
+		-moz-border-radius: 0px 3px 3px 0px;
+		border-radius: 0px 3px 3px 0px;
+		&:hover {
+			-moz-box-shadow: inset 0 0px 60px rgba(0,0,0,0.3);
+			-webkit-box-shadow: inset 0 0px 60px rgba(0,0,0,0.3);
+			box-shadow: inset 0 0px 60px rgba(0,0,0,0.3);
+		}
+	}
+	input[name="q"] {
+		width: 258px;
+		background-color: transparent;
+		border-top-style: none;
+		border-right-style: none;
+		border-bottom-style: none;
+		border-left-style: none;
+		border-top-width: 0px;
+		border-right-width: 0px;
+		border-bottom-width: 0px;
+		border-left-width: 0px;
+		color: #fff;
+		font-size: 12px;
+		font-weight: normal;
+		float: left;
+		height: 28px;
+		outline: none;
+		padding-left: 12px;
+		padding-top: 0px;
+	}
+}
+#MSUSearchTool.white-fill {
+	#search-tool-box {
+		background: #fff;
+	}
+	#btn_search {
+		background: #fff url(../images/Search.svg) no-repeat center;
+	}
+}
+#MSUSearchTool.no-fill {
+	#search-tool-box {
+		background: transparent;
+	}
+	#btn_search {
+		background: transparent url(../images/Search.svg) no-repeat center;
+	}
+}
+#MSUstandardFooter {
+	height: 170px;
+	font-family: 'Gotham SSm A', 'Gotham SSm B', arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	.fourMSUcolumns {
+		width: 221px;
+		float: left;
+		position: relative;
+		margin-right: 18px;
+		img {
+			width: 100%;
+			margin-top: 8px;
+		}
+	}
+	.thirteenMSUcolumns {
+		width: 660px;
+		float: left;
+		position: relative;
+		margin: 5px 0px 0px 0px;
+	}
+	#standard-footer-site-links {
+		ul {
+			margin: 0px;
+			padding: 0px;
+			height: 22px;
+			border-bottom: 1px dotted #808080;
+			float: left;
+			clear: right;
+			li {
+				display: inline-block;
+				padding-left: 4px;
+				font-size: 12px;
+				font-size: 1rem;
+				margin-left: 0px;
+				margin-right: 0px;
+				&:first-child {
+					padding: 0px;
+				}
+				&:nth-child(2) {
+					a {
+						padding: 0px 8px 0px 8px;
+					}
+				}
+				&:last-child {
+					a {
+						border-right: none;
+					}
+				}
+				a {
+					text-decoration: none;
+					padding-right: 8px;
+					font-weight: 500;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+	#standard-footer-site-nocall-links {
+		ul {
+			margin: 0px;
+			padding: 0px;
+			height: 22px;
+			border-bottom: 1px dotted #808080;
+			float: left;
+			clear: right;
+			li {
+				display: inline-block;
+				font-size: 12px;
+				font-size: 1rem;
+				padding-left: 4px;
+				&:first-child {
+					display: inline-block;
+					font-size: 12px;
+					font-size: 1rem;
+					padding-left: 0px;
+				}
+				a {
+					padding: 0px 8px 0px 8px;
+					padding-right: 8px;
+					text-decoration: none;
+					font-weight: 500;
+					&:first-child {
+						padding: 0px 8px 0px 0px;
+					}
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+	#standard-footer-MSU-info {
+		font-size: 9px;
+		font-size: 0.5625rem;
+		margin-top: 2px;
+		padding-top: 0px;
+		float: left;
+		clear: right;
+		ul {
+			margin: 0px;
+			padding: 0px;
+			height: 16px;
+			font-size: 9px;
+			font-size: 0.5625rem;
+			li {
+				margin-bottom: 0px;
+				line-height: 10px;
+				display: inline;
+				border-right: 1px solid #999;
+				padding: 0px 8px 0px 4px;
+				margin-left: 0px;
+				margin-right: 0px;
+				&:first-child {
+					padding-left: 0px;
+				}
+				&:last-child {
+					border-right: 0px;
+				}
+				a {
+					text-decoration: none;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+			li.spartans-will {
+				text-transform: uppercase;
+				font-weight: 600;
+			}
+		}
+	}
+}
+#MSUstandardFooter.light-background {
+	#standard-footer-site-links {
+		color: #18453b;
+		a {
+			color: #18453b;
+			border-right: 1px solid #18453b;
+		}
+		ul {
+			li {
+				&:nth-child(2) {
+					a {
+						border-left: 1px solid #18354b;
+					}
+				}
+			}
+		}
+	}
+	#standard-footer-site-nocall-links {
+		color: #18453b;
+		ul {
+			li {
+				a {
+					color: #18453b;
+					border-right: 1px solid #18354b;
+				}
+				&:last-child {
+					a {
+						border-right: none;
+					}
+				}
+			}
+		}
+	}
+	#standard-footer-MSU-info {
+		color: #18453b;
+		a {
+			color: #4c7e00;
+		}
+		.msu-phone {
+			color: #4c7e00;
+		}
+	}
+}
+#MSUstandardFooter.dark-background {
+	#standard-footer-site-links {
+		color: #fff;
+		ul {
+			li {
+				&:nth-child(2) {
+					a {
+						border-left: 1px solid #737373;
+					}
+				}
+			}
+		}
+		a {
+			color: #fff;
+			border-right: 1px solid #737373;
+		}
+	}
+	#standard-footer-site-nocall-links {
+		color: #fff;
+		ul {
+			li {
+				a {
+					color: #fff;
+					border-right: 1px solid #737373;
+				}
+				&:last-child {
+					a {
+						color: #fff;
+						border-right: none;
+					}
+				}
+			}
+		}
+	}
+	#standard-footer-MSU-info {
+		color: #fff;
+		a {
+			color: #81d300;
+		}
+		.msu-phone {
+			color: #81d300;
+		}
+	}
+}
+#standard-footer-MSU-wordmark {
+	img.print-msuwordmark {
+		display: none;
+	}
+}
+
+@media screen and (max-width:700px) {
+    #MSUSearchTool {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    #MSUheader {
+        padding-left: 4.6%;
+        width: 91.8%;
+        padding-right: 4.6%;
+    }
+    #header-center-aligner {
+        padding-left: 4.6%;
+        width: 91.8%;
+        padding-right: 4.6%;
+    }
+}
+
+@media print {
+	#MSUmasthead {
+		img.print-msugraphic {
+			display: block;
+		}
+		img.msugraphic-green {
+			display: none;
+		}
+		img.msugraphic-white {
+			display: none;
+		}
+	}
+	#standard-footer-MSU-wordmark {
+		img.print-msuwordmark {
+			display: block;
+		}
+		img.msuwordmark-green {
+			display: none;
+		}
+		img.msuwordmark-white {
+			display: none;
+		}
+	}
+	#MSUSearchTool {
+		#search-tool-box {
+			margin-right: 12px;
+		}
+	}
+}

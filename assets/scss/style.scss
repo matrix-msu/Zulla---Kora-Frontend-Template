@@ -1,0 +1,21 @@
+@charset "utf-8"; //was getting some error with files not being encoded in the utf-8 charset, this fixes that issue
+
+@import "partials/colors";
+//colors needs to be loaded before base since base uses variables defined in colors
+@import "partials/base";
+@import "partials/fonts";
+@import "partials/footer";
+@import "partials/header";
+@import "partials/index";
+@import "partials/search";
+@import "partials/about";
+@import "partials/MSU_header";
+//components folder
+@import "partials/components/buttons";
+@import "partials/components/cards";
+@import "partials/components/carousel";
+@import "partials/components/drawers";
+@import "partials/components/fullrecord";
+@import "partials/components/modal";
+@import "partials/components/tabs";
+@import "partials/components/pagination";
