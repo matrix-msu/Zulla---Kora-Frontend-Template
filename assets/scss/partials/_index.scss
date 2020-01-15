@@ -13,12 +13,50 @@
         padding-bottom: 65px;
         text-align: left;
 
-        h1{
+        h1 {
             line-height: 1;
         }
 
-        h3{
-            margin: 20px 0 35px 0;
+        p {
+            line-height: 28px;
+            padding-top: 10px;
+            padding-right: 260px;
+            a {
+                letter-spacing: 3.5px;
+                color: #FFC383;
+                margin-left: 15px;
+                border-bottom: 2px solid rgba(255, 195, 131, 0.25);
+                transition: border 0.2s;
+            }
+            a:hover {
+              border-bottom: 2px solid #FFC383;
+            }
+        }
+    }
+}
+
+.featured-collections{
+    background-color: $base-dark;
+    height: auto;
+    padding: 65px 0;
+    width: 100%;
+    .collectionwrap{
+        margin: 0 auto;
+        max-width: 1000px;
+        p {
+            color: $base-light;
+            letter-spacing: 3.5px;
+            margin-bottom: 30px;
+            a {
+                letter-spacing: 3.5px;
+                color: #FFC383;
+                margin-left: 15px;
+                border-bottom: 2px solid rgba(255, 195, 131, 0.25);
+                transition: border 0.2s;
+            }
+            a:hover {
+              border-bottom: 2px solid #FFC383;
+            }
         }
     }
 }
@@ -56,7 +94,7 @@
 }
 
 .options{
-    background-color: #FBFBFB;;
+    background-color: $base-dark;
     height: auto;
     padding: 100px 0 60px 0;
     width: 100%;
@@ -201,6 +239,10 @@
     .middlewrap{
         padding: 0 6%;
     }
+    .collectionwrap{
+        padding: 0 6%;
+    }
+
     .aboutwrap{
         padding: 0 6%;
     }

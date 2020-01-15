@@ -1,5 +1,5 @@
 .column{
-    background-color: $base-light;
+    background-color: $base-dark;
     height: auto;
     padding: 100px 0;
     width: 100%;
@@ -26,7 +26,7 @@
                 .cards{
                     border: 2px solid rgba(13,18,48,0.05);
                     box-shadow: 0 2px 3px 0 rgba(30,30,30,0.05);
-                    color: $base-dark;
+                    color: $base-light;
                     cursor: pointer;
                     height: 275px;
                     padding: 20px;
@@ -339,7 +339,53 @@
     }
 }
 
-
+.card-slider{
+    .cards{
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: fit-content;
+        margin-bottom: 35px;
+    }
+    li.card-collection{
+        cursor: pointer;
+        height: 185px;
+        width: 350px;
+        margin-right: 15px;
+        padding: 30px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        box-shadow: 0 10px 15px 0 rgba(0,0,0,0.15);
+        transition: all 0.3s;
+        background-image: url(../images/template_images/landing.jpg);
+        //background: linear-gradient(180deg, rgba(1,4,21,0.25) 0%, rgba(1,4,21,0.8) 100%);
+        a {
+            position: relative;
+            top: 65px;
+            p {
+                letter-spacing: 0;
+            }
+            .card-resource{
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+            .card-title{
+                color: $base-light;
+                margin-bottom: 5px;
+            }
+            .card-desc{
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical
+            }
+        }
+        &:hover{
+            border: 2px solid #FFC383;
+        }
+    }
+}
 @media screen and (min-width: $mobile-card-breakpoint){
     .column{
 
@@ -413,9 +459,9 @@
 }
 
 @media screen and (max-width: $mobile-max-width){
-    .cardwrap{
-        padding: 0 6%;
-    }
+    // .cardwrap{
+    //     padding: 0 6%;
+    // }
 }
 
 //_imageCardGrid media query

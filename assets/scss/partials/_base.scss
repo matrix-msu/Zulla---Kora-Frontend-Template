@@ -10,6 +10,13 @@ $mobile-width-400:          400px;
 $mobile-button-breakpoint:  768px;
 $mobile-button-breakpoint-2:450px;
 
+// font variables
+$bold: 'HKBold';
+$bold-italic: 'HKBoldItalic';
+$medium: 'HKMedium';
+$medium-italic: 'HKMediumItalic';
+
+
 html{
     margin: 0 0 0 0;
     padding: 0;
@@ -19,48 +26,64 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-h1,h2,h3,h4,h5,p,a{
+h1,h2,h3,h4,h5,p,a,b{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
     margin: 0;
     padding: 0;
 }
-h1{
-    font-family: bigcaslonblack;
-    font-size: 80px;
+
+h1 {
+    font-family: $bold;
+    font-size: 54px;
 }
 
-h2{
-    font-family: bigcaslonblack;
-    font-size: 46px;
+h2 {
+    font-family: $bold;
+    font-size: 54px;
 }
 
-h3{
-    font-family: montserratregular;
-    font-size: 26px;
+h3 {
+    font-family: $bold;
+    font-size: 34px;
 }
-h4{
-    font-family: bigcaslonblack;
-    font-size: 25px;
+
+h4 {
+    font-family: $bold;
+    font-size: 24px;
 }
-p{
-    font-family: montserratregular;
-    font-size: 16px;
+
+h5 {
+    font-family: $bold;
+    font-size: 14px;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
 }
-a{
-    font-family: montserratmedium;
+
+P {
+    font-family: $medium;
+    font-size: 14px;
+}
+
+b {
+    font-family: $bold;
+}
+
+i {
+    font-family: $medium-italic;
+}
+
+a {
+    color: inherit;
     cursor: pointer;
+    text-decoration: none;
 }
+
 span{
     font-family: montserratmedium;
 }
 
-b {
-    font-family: montserratbold;
-    font-weight: normal;
-}
-i {
-    font-family: montserratitalic;
-    font-style: normal;
-}
 ul {
     font-family: montserratregular;
 }
