@@ -346,7 +346,7 @@
         padding: 0;
         margin: 0;
         width: fit-content;
-        margin-bottom: 35px;
+        margin-bottom: 15px;
     }
     li.card-collection{
         cursor: pointer;
@@ -379,6 +379,38 @@
                 overflow: hidden;
                 -webkit-line-clamp: 3;
                 -webkit-box-orient: vertical
+            }
+        }
+        &:hover{
+            border: 2px solid #FFC383;
+        }
+    }
+
+    li.card-records{
+        cursor: pointer;
+        height: 170px;
+        width: 170px;
+        margin-right: 15px;
+        padding: 15px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        box-shadow: 0 10px 15px 0 rgba(0,0,0,0.15);
+        transition: all 0.3s;
+        background-image: url(../images/template_images/landing.jpg);
+        //background: linear-gradient(180deg, rgba(1,4,21,0.25) 0%, rgba(1,4,21,0.8) 100%);
+        a {
+            position: relative;
+            top: 80px;
+            p {
+                letter-spacing: 0;
+            }
+            .card-content{
+                font-size: 12px;
+                margin-bottom: 0px;
+            }
+            .card-title{
+                color: $base-light;
+                margin-top: 10px;
             }
         }
         &:hover{
