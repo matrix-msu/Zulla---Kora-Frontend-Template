@@ -60,7 +60,148 @@
         }
     }
 }
+.featured-records{
+    .collectionwrap{
+        transition: 400ms;
+        .cardwrap{
+            position: relative;
+        }
+        .arrow-left,
+        .arrow-right {
+            display: none;
+            background: url(../images/template_images/chevron-down.svg) no-repeat;
+            background-color: rgba(255,255,255,0.15);
+            background-position: 19px;
+            border: none;
+            border-radius: 5px;
+            height: 50px;
+            position: absolute;
+            top: 128%;
+            transition: 400ms;
+            width: 50px;
+            z-index: 2;
+            &:hover {
+                cursor: pointer;
+                background-color: rgba(255,195,131,0.9);
+            }
+            &:focus {
+                outline: none;
+            }
+        }
 
+        .arrow-right {
+            margin-right: 40px;
+            right: 0;
+            transform: rotate(-90deg);
+        }
+        .arrow-left {
+            margin-left: 40px;
+            transform: rotate(90deg);
+        }
+        &:hover {
+          .arrow-left,
+          .arrow-right{
+            display: block;
+          }
+        }
+    }
+}
+
+.featured-collections{
+    .collectionwrap{
+        transition: 400ms;
+        .cardwrap{
+            position: relative;
+        }
+        .arrow-left,
+        .arrow-right {
+            display: none;
+            background: url(../images/template_images/chevron-down.svg) no-repeat;
+            background-color: rgba(255,255,255,0.15);
+            background-position: 19px;
+            border: none;
+            border-radius: 5px;
+            height: 50px;
+            position: absolute;
+            top: 72.5%;
+            transition: 400ms;
+            width: 50px;
+            z-index: 2;
+            &:hover {
+                cursor: pointer;
+                background-color: rgba(255,195,131,0.9);
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .arrow-right {
+            margin-right: 40px;
+            right: 0;
+            transform: rotate(-90deg);
+        }
+        .arrow-left {
+            margin-left: 40px;
+            transform: rotate(90deg);
+        }
+        &:hover {
+          .arrow-left,
+          .arrow-right{
+            display: block;
+          }
+        }
+    }
+}
+.search{
+    background-color: $base-dark;
+    height: auto;
+    padding: 65px 0;
+    width: 100%;
+    .searchwrap{
+        margin: 0 auto;
+        max-width: 1000px;
+        p {
+            color: $base-light;
+            letter-spacing: 3.5px;
+            margin-bottom: 30px;
+        }
+        .search-box {
+            height: 188px;
+            width: calc(100% - 80px);
+            padding-left: 45px;
+            padding-top: 60px;
+            border-radius: 5px;
+            background-image: url(../images/template_images/landing.jpg);
+            h4{
+              color: $base-light;
+              margin-bottom: 15px;
+            }
+            .search-field{
+              box-sizing: border-box;
+              height: 60px;
+              width: calc(100% - 115px);
+              border: 1px solid rgba(255,255,255,0.45);
+              border-radius: 5px;
+              background-color: rgba(255,255,255,0.15);
+              box-shadow: 0 10px 15px 0 rgba(56,63,75,0.03);
+            }
+            .search-submit{
+              box-sizing: border-box;
+              height: 60px;
+              width: 60px;
+              border: 1px solid rgba(255,255,255,0.45);
+              border-radius: 5px;
+              background-color: rgba(255,255,255,0.15);
+              transition: border 0.2s;
+            }
+            .search-submit:hover{
+              border: 1px solid #FFC383;
+              background-color: rgba(255,195,131,0.26);
+            }
+        }
+    }
+}
 .about{
     background-color: $base-dark;
     height: auto;
@@ -240,6 +381,9 @@
         padding: 0 6%;
     }
     .collectionwrap{
+        padding: 0 6%;
+    }
+    .searchwrap{
         padding: 0 6%;
     }
 

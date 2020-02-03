@@ -122,3 +122,26 @@ function setDots () {
     }
     dots[curDot].classList.add('active')
 }
+
+var currpos_img_records = 0
+var currpos_img_collections = 0
+
+$('#records-left').click(function () {
+    currpos_img_records = currpos_img_records + 25.9;
+    $('#cardwrap-records').animate( {left: currpos_img_records + '%'});
+});
+
+$('#records-right').click(function () {
+    currpos_img_records = currpos_img_records - 25.9;
+    $('#cardwrap-records').animate( {left: currpos_img_records + '%'});
+});
+
+$('#collections-left').click(function () {
+    currpos_img_collections = currpos_img_collections + 50.7;
+    $('#cardwrap-collections').animate( {left: currpos_img_collections + '%'});
+});
+
+$('#collections-right').click(function () {
+    currpos_img_collections = currpos_img_collections - 50.7;
+    $('#cardwrap-collections').animate( {left: currpos_img_collections + '%'});
+});

@@ -350,35 +350,42 @@
     }
     li.card-collection{
         cursor: pointer;
-        height: 185px;
-        width: 350px;
+        height: 245px;
+        width: 410px;
         margin-right: 15px;
-        padding: 30px;
         border: 2px solid transparent;
         border-radius: 5px;
         box-shadow: 0 10px 15px 0 rgba(0,0,0,0.15);
         transition: all 0.3s;
-        background-image: url(../images/template_images/landing.jpg);
-        //background: linear-gradient(180deg, rgba(1,4,21,0.25) 0%, rgba(1,4,21,0.8) 100%);
         a {
             position: relative;
-            top: 65px;
+            img {
+              height: 245px;
+              width: 410px;
+              object-fit: cover;
+              position:absolute;
+              border-radius: 5px;
+            }
             p {
                 letter-spacing: 0;
             }
-            .card-resource{
-                font-size: 13px;
-                margin-bottom: 10px;
-            }
-            .card-title{
-                color: $base-light;
-                margin-bottom: 5px;
-            }
-            .card-desc{
-                display: -webkit-box;
-                overflow: hidden;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical
+            .card-component{
+                padding-left: 30px;
+                padding-top: 90px;
+                .card-resource{
+                    font-size: 13px;
+                    margin-bottom: 10px;
+                }
+                .card-title{
+                    color: $base-light;
+                    margin-bottom: 5px;
+                }
+                .card-desc{
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical
+                }
             }
         }
         &:hover{
@@ -388,29 +395,36 @@
 
     li.card-records{
         cursor: pointer;
-        height: 170px;
-        width: 170px;
+        height: 200px;
+        width: 200px;
         margin-right: 15px;
-        padding: 15px;
         border: 2px solid transparent;
         border-radius: 5px;
         box-shadow: 0 10px 15px 0 rgba(0,0,0,0.15);
         transition: all 0.3s;
-        background-image: url(../images/template_images/landing.jpg);
-        //background: linear-gradient(180deg, rgba(1,4,21,0.25) 0%, rgba(1,4,21,0.8) 100%);
         a {
             position: relative;
-            top: 80px;
+            img {
+              height: 200px;
+              width: 200px;
+              object-fit: cover;
+              position:absolute;
+              border-radius: 5px;
+            }
             p {
                 letter-spacing: 0;
             }
-            .card-content{
-                font-size: 12px;
-                margin-bottom: 0px;
-            }
-            .card-title{
-                color: $base-light;
-                margin-top: 10px;
+            .card-component{
+                padding-left: 15px;
+                padding-top: 95px;
+                .card-content{
+                    font-size: 12px;
+                    margin-bottom: 0px;
+                }
+                .card-title{
+                    color: $base-light;
+                    margin-top: 10px;
+                }
             }
         }
         &:hover{
