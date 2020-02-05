@@ -1,11 +1,16 @@
 #footer{
     height: 300px;
     background-color: $base-dark;
-    
     .footerwrap{
-        
-        .footer-section{
-            
+        max-width: 1000px;
+        padding: 40px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        a{
+          display: flex;
+          justify-content: space-around;
+          padding: 40px 20px;
         }
     }
 }
