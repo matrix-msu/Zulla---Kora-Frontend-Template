@@ -1,9 +1,11 @@
 <!-- msu header container -->
 <div class="navigation-header">
   <div id="header-center-aligner">
-
             <div class="left-section">
-                <a href="<?php echo BASE_URL;?>"><img class="logo-link" src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>logo.svg" alt="logo.svg"></a>
+                <a href="<?php echo BASE_URL;?>">
+                  <div class="site-logo"></div>
+                  <h4>Site Title</h4>
+                </a>
             </div>
             <div class="dropdown-menu">
                 <div class="responsive-menu">
