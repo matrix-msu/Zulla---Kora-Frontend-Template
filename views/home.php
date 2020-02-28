@@ -18,10 +18,11 @@
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
-                            <h3 class="card-title">Collection Title</h3>
+                            <h3 class="card-title">Long Long Long Collection Title</h3>
                             <p class="card-desc">Lorem ipsum dolor sit amet.</p>
                         </div>
                     </a>
+                    <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
                     <a href="">
@@ -39,6 +40,20 @@
                               Pellentesque elit eget gravidasociis natoque penatibus et magnis.</p>
                         </div>
                     </a>
+                    <div class="overlay"></div>
+                </li>
+                <li class="card card-collection">
+                    <a href="">
+                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
+                        <div class="card-component">
+                            <p class="card-resource">117 Resources</p>
+                            <h3 class="card-title">Collection Title</h3>
+                            <p class="card-desc">Lorem ipsum dolor sit amet, iusmod tempor incididunt ut
+                              labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </a>
+                    <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
                     <a href="">
@@ -51,18 +66,7 @@
                             </p>
                         </div>
                     </a>
-                </li>
-                <li class="card card-collection">
-                    <a href="">
-                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
-                        <div class="card-component">
-                            <p class="card-resource">117 Resources</p>
-                            <h3 class="card-title">Collection Title</h3>
-                            <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
-                        </div>
-                    </a>
+                    <div class="overlay"></div>
                 </li>
             </ul>
         </div>
@@ -75,7 +79,28 @@
     <div class="container collectionwrap">
         <p>FEATURED RECORDS<a>VIEW ALL</a></p>
         <div class="cardwrap" id="cardwrap-records">
-            <ul class="cards">
+            <ul class="cards" id= "first">
+                <li class="card card-records">
+                    <a href="">
+                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
+                        <div class="card-component">
+                            <p class="card-content">Metadata Content</p>
+                            <p class="card-content">Other Metadata Content</p>
+                            <h4 class="card-title">Record Title</h4>
+                        </div>
+                    </a>
+                    <div class="overlay"></div>
+                </li>
+                <li class="card card-records">
+                    <a href="">
+                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
+                        <div class="card-component">
+                            <p class="card-content">Metadata Content</p>
+                            <h4 class="card-title">Record Title</h4>
+                        </div>
+                    </a>
+                    <div class="overlay"></div>
+                </li>
                 <li class="card card-records">
                     <a href="">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
@@ -83,9 +108,10 @@
                             <p class="card-content">Metadata Content</p>
                             <p class="card-content">Other Metadata Content</p>
                             <p class="card-content">Metadata Content</p>
-                            <h4 class="card-title">Record Title</h4>
+                            <h4 class="card-title">Long Long Long Long Record Title</h4>
                         </div>
                     </a>
+                    <div class="overlay"></div>
                 </li>
                 <li class="card card-records">
                     <a href="">
@@ -97,6 +123,7 @@
                             <h4 class="card-title">Record Title</h4>
                         </div>
                     </a>
+                    <div class="overlay"></div>
                 </li>
                 <li class="card card-records">
                     <a href="">
@@ -108,6 +135,7 @@
                             <h4 class="card-title">Record Title</h4>
                         </div>
                     </a>
+                    <div class="overlay"></div>
                 </li>
                 <li class="card card-records">
                     <a href="">
@@ -119,28 +147,7 @@
                             <h4 class="card-title">Record Title</h4>
                         </div>
                     </a>
-                </li>
-                <li class="card card-records">
-                    <a href="">
-                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
-                        <div class="card-component">
-                            <p class="card-content">Metadata Content</p>
-                            <p class="card-content">Other Metadata Content</p>
-                            <p class="card-content">Metadata Content</p>
-                            <h4 class="card-title">Record Title</h4>
-                        </div>
-                    </a>
-                </li>
-                <li class="card card-records">
-                    <a href="">
-                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
-                        <div class="card-component">
-                            <p class="card-content">Metadata Content</p>
-                            <p class="card-content">Other Metadata Content</p>
-                            <p class="card-content">Metadata Content</p>
-                            <h4 class="card-title">Record Title</h4>
-                        </div>
-                    </a>
+                    <div class="overlay"></div>
                 </li>
             </ul>
             <ul class="cards">
@@ -165,6 +172,7 @@
                             <h4 class="card-title">Record Title</h4>
                         </div>
                     </a>
+                    <div class="overlay"></div>
                 </li>
                 <li class="card card-records">
                     <a href="">
@@ -176,6 +184,7 @@
                             <h4 class="card-title">Record Title</h4>
                         </div>
                     </a>
+                    <div class="overlay"></div>
                 </li>
                 <li class="card card-records">
                     <a href="">
@@ -187,6 +196,7 @@
                             <h4 class="card-title">Record Title</h4>
                         </div>
                     </a>
+                    <div class="overlay"></div>
                 </li>
                 <li class="card card-records">
                     <a href="">
@@ -198,6 +208,7 @@
                             <h4 class="card-title">Record Title</h4>
                         </div>
                     </a>
+                    <div class="overlay"></div>
                 </li>
                 <li class="card card-records">
                     <a href="">
@@ -209,6 +220,7 @@
                             <h4 class="card-title">Record Title</h4>
                         </div>
                     </a>
+                    <div class="overlay"></div>
                 </li>
             </ul>
         </div>
