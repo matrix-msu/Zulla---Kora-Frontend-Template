@@ -122,3 +122,68 @@ function setDots () {
     }
     dots[curDot].classList.add('active')
 }
+
+function featuredCollection(){
+    collection_wrap = '.featured-collections .collectionwrap'
+
+    var card_width = parseInt($(collection_wrap+' .cardwrap li.card').outerWidth()) + parseInt($(collection_wrap+' .cardwrap li.card').css('marginRight')); //card width + margin-right (margin-right always = 20px)
+    var cardwrap_width = $(collection_wrap+' .cardwrap').outerWidth();
+    $(collection_wrap+' .cardwrap li.card').last().css('margin-right', cardwrap_width+'px');
+
+    var num_cards = $(collection_wrap+' .cardwrap li.card').length;
+    var cardid = 1
+
+    $('#collections-left').click(function(){
+        if (cardid > 1) {
+          cardid = cardid - 1;
+          $('#cardwrap-collections').animate({
+              scrollLeft: card_width * (cardid-1)
+          }, 500);
+        }
+    });
+    $('#collections-right').click(function(){
+        if (cardid < num_cards) {
+          cardid = cardid + 1;
+          $('#cardwrap-collections').animate({
+              scrollLeft: card_width * (cardid-1)
+          }, 500);
+        }
+    });
+}
+
+function featuredRecord(){
+    record_wrap = '.featured-records .collectionwrap'
+
+    var card_width = parseInt($(record_wrap+' .cardwrap li.card').outerWidth()) + parseInt($(record_wrap+' .cardwrap li.card').css('marginRight')); //card width + margin-right (margin-right always = 20px)
+    var cardwrap_width = $(record_wrap+' .cardwrap').outerWidth();
+    $(record_wrap+' .cardwrap li.card').last().css('margin-right', cardwrap_width+'px');
+
+    var num_cards = $(record_wrap+' .cardwrap ul#first li.card').length;
+    var cardid = 1
+
+    $('#records-left').click(function(){
+        if (cardid > 1) {
+          cardid = cardid - 1;
+          $('#cardwrap-records').animate({
+              scrollLeft: card_width * (cardid-1)
+          }, 500);
+        }
+    });
+    $('#records-right').click(function(){
+        if (cardid < num_cards) {
+          cardid = cardid + 1;
+          $('#cardwrap-records').animate({
+              scrollLeft: card_width * (cardid-1)
+          }, 500);
+        }
+    });
+}
+
+$(document).ready(function(){
+
+
+    featuredCollection();
+    featuredRecord();
+
+
+});

@@ -51,16 +51,56 @@
 @font-face {
     font-family: 'montserratitalic';
     src: url('../fonts/Monsterrat-Italic/montserrat-italic-webfont.eot');
-    src: url('../fonts/Monsterrat-Italic/montserrat-italic-webfont.eot?#iefix') 
+    src: url('../fonts/Monsterrat-Italic/montserrat-italic-webfont.eot?#iefix')
         format('embedded-opentype'),
-         url('../fonts/Monsterrat-Italic/montserrat-italic-webfont.woff2') 
+         url('../fonts/Monsterrat-Italic/montserrat-italic-webfont.woff2')
         format('woff2'),
-         url('../fonts/Monsterrat-Italic/montserrat-italic-webfont.woff') 
+         url('../fonts/Monsterrat-Italic/montserrat-italic-webfont.woff')
         format('woff'),
-         url('../fonts/Monsterrat-Italic/montserrat-italic-webfont.ttf') 
+         url('../fonts/Monsterrat-Italic/montserrat-italic-webfont.ttf')
         format('truetype'),
          url('../fonts/Monsterrat-Italic/montserrat-italic-webfont.svg#montserratitalic') format('svg');
     font-weight: normal;
     font-style: normal;
 
+}
+
+@font-face {
+    font-family: 'HKBold';
+    src: url('../fonts/HKBold/HKBold.woff2') format('woff2'),
+         url('../fonts/HKBold/HKBold.woff') format('woff'),
+         url('../fonts/HKBold/HKBold.ttf') format('truetype'),
+         url('../fonts/HKBold/HKBold.svg#HKBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HKBoldItalic';
+    src: url('../fonts/HKBoldItalic/HKBoldItalic.woff2') format('woff2'),
+         url('../fonts/HKBoldItalic/HKBoldItalic.woff') format('woff'),
+         url('../fonts/HKBoldItalic/HKBoldItalic.ttf') format('truetype'),
+         url('../fonts/HKBoldItalic/HKBoldItalic.svg#HKBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HKMedium';
+    src: url('../fonts/HKMedium/HKMedium.woff2') format('woff2'),
+         url('../fonts/HKMedium/HKMedium.woff') format('woff'),
+         url('../fonts/HKMedium/HKMedium.ttf') format('truetype'),
+         url('../fonts/HKMedium/HKMedium.svg#HKMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HKMediumItalic';
+    src: url('../fonts/HKMediumItalic/HKMediumItalic.woff2') format('woff2'),
+         url('../fonts/HKMediumItalic/HKMediumItalic.woff') format('woff'),
+         url('../fonts/HKMediumItalic/HKMediumItalic.ttf') format('truetype'),
+         url('../fonts/HKMediumItalic/HKMediumItalic.svg#HKMediumItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
