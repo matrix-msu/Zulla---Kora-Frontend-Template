@@ -7,7 +7,7 @@
 	.left-section {
 	    position: relative;
 	    display: inline-block;
-	    padding-top: 40px;
+	    padding-top: 25px;
 			a{
 					.site-logo{
 							width: 23px;
@@ -28,12 +28,13 @@
 		.nav-link {
 			color: #fff;
 			cursor: pointer;
-			font-family: montserratregular;
-			font-size: 16px;
-			font-weight: 300;
+			font-family: $bold;
+			font-size: 13px;
+			letter-spacing: 3.25px;
 			line-height: 85px;
 			padding-right: 10px;
 			text-decoration: none;
+			text-transform: uppercase;
 		}
 		.dropdown-button {
 			cursor: pointer;
@@ -47,9 +48,11 @@
 		float: right;
 		position: relative;
 		.nav {
+			display: flex;
+			align-items: center;
 			list-style-type: none;
 			margin: 0;
-			padding: 50px 10px;
+			padding: 30px 10px;
 			#drop-link {
 				ul {
 					list-style-type: none;
@@ -57,26 +60,28 @@
 					padding: 0;
 					position: absolute;
 					.browse-sub {
-						background-color: #0D1230;
+						background-color: $base-dark;
 						display: none;
-						left: -40px;
 						margin: 0;
-						padding-bottom: 10px;
+						padding: 15px 20px;
 						position: absolute;
-						text-align: right;
-						width: 200px;
+						text-align: center;
+						top: 15px;
+
 						.nav-sublink {
 							display: block;
 							color: #fff;
 							cursor: pointer;
-							font-family: montserratregular;
+							font-family: $bold;
 							font-size: 12px;
 							font-weight: 300;
 							line-height: 35px;
 							text-decoration: none;
+							text-transform: uppercase;
 							transition: color 0.3s ease;
+							white-space: nowrap;
 							&:hover {
-								color: #27AD88;
+								color: $accent;
 							}
 						}
 					}
@@ -90,6 +95,7 @@
 					margin-left: 5px;
 					img {
 						width: 12px;
+						transition: all .2s ease;
 					}
 				}
 				drop-link {
@@ -101,19 +107,34 @@
 					font-family: $bold;
 					font-size: 13px;
 					letter-spacing: 3.25px;
-					margin-left: 45px;
+					margin-left: 25px;
 					text-decoration: none;
+					text-transform: uppercase;
 					transition: color 0.3s ease;
+					padding: 20px 0;
+					
+					&.search-icon {
+						img {
+							width: 17px;
+							margin-left: 30px;
+							margin-top: 6px;
+						}
+					}
 				}
 				.selected {
-					border-bottom: 2px solid #27AD88;
-					color: #27AD88;
+					border-bottom: 2px solid $accent;
+					color: $accent;
 					padding: 0 3px 31px;
 				}
 				&:hover {
 					cursor: pointer;
+					.drop-carat {
+						img {
+							transform: rotate(180deg);
+						}
+					}
 					.nav-link {
-						color: #27AD88;
+						color: $accent;
 					}
 				}
 			}
@@ -125,22 +146,19 @@
 
 
 .fixedheader {
-    background-color: #0D1230;
+    background-color: $base-dark;
     position: fixed;
-    top: -85px;
+    top: unset;
     transition: top 0.3s;
 }
 
-@media screen and (min-width:700px){
+@media screen and (min-width:750px){
   .dropdown-menu {
     display: none;
   }
 }
 
-@media screen and (max-width:700px) {
-	.navbar {
-		padding: 0.2% 0.6%;
-	}
+@media screen and (max-width:750px) {
 	.navigation-header {
 		.dropclass {
 			display: block !important;
@@ -149,7 +167,7 @@
 			top: 150px;
 		}
 		.right-section {
-			background-color: #0D1230;
+			background-color: $base-dark;
 			display: none;
 			height: 550px;
 			margin-right: 0px;
@@ -157,7 +175,9 @@
 			overflow-y: auto;
 			text-align: right;
 			width: 230px;
+			top: 80px;
 			.nav {
+				display: block;
 				padding-top: 30px;
 				padding-right: 42px;
 				#drop-link {
@@ -167,6 +187,9 @@
 							margin: 0;
 							position: static;
 							width: unset;
+							padding: 0 0 20px 0;
+							text-align: right;
+							
 							.nav-sublink {
 								display: block;
 								color: #fff;
