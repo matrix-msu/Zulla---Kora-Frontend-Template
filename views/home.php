@@ -1,10 +1,12 @@
 <div class="container main">
+	<div class="background"></div>
     <div class="container middlewrap">
         <h1>Followed by some brief about information, or site tagline.</h1>
         <p>Site Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi <a>LEARN MORE</a></p>
+          quis nostrud exercitation ullamco laboris nisi &nbsp;&nbsp; <a>LEARN MORE</a></p>
     </div>
+    <div class="overlay"></div>
 </div>
 
 <!--  Cards/Column container  -->
@@ -15,7 +17,7 @@
             <ul class="cards">
                 <li class="card card-collection">
                     <a href="">
-                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
+                        <img src="<?php echo BASE_IMAGE_URL;?>background-landing.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
                             <h3 class="card-title">Long Long Long Collection Title</h3>
@@ -229,15 +231,18 @@
     </div>
 </div>
 
-<div class="container search">
+<div class="container search">	
     <div class="container searchwrap">
         <p>START YOUR SEARCH</p>
         <div class="search-box">
-            <h4>Search across 23,789 records here</h4>
-            <form action="submit">
-                <input class="search-field" type="text" name="searchbar" placeholder="Enter a keyword here …"/>
-                <input class="search-submit" type="submit" alt="search.svg" />
-            </form>
+	        <div class="background"></div>
+	        <div class="search-contents">
+	            <h4>Search across 23,789 records here</h4>
+	            <form action="submit">
+	                <input class="search-field" type="text" name="searchbar" placeholder="Enter a keyword here …"/>
+	                <input class="search-submit" type="submit" alt="search.svg" />
+	            </form>
+	        </div>
         </div>
     </div>
 </div>
