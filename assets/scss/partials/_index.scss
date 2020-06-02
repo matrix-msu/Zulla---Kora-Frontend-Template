@@ -405,7 +405,26 @@
             }
         }
     }
-}
+    
+	.search
+	    .searchwrap{
+	        .search-box {
+	            .search-contents {
+		            padding: 30px;
+		            .search-field{
+						width: 100%;
+		            }
+		            
+		            .search-submit{
+			            margin-left: 0;
+						margin-top: 10px;
+						width: 100%;
+		            }
+		        }
+	        }
+	    }
+	}
+
 
 
 @media screen and (max-width: $mobile-max-width){
