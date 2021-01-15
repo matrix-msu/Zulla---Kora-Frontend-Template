@@ -42,14 +42,14 @@
     }
 }
 
- .overlay {
-	    background-image: linear-gradient(180deg, $base-dark-translucent-15 0%, $base-dark 100%);
-	    height: 100%;
-		position: absolute;
-		width: 100%;
-		bottom: 0;
-		z-index: -1;
-    }
+.overlay {
+	background-image: linear-gradient(180deg, $base-dark-translucent-15 0%, $base-dark 100%);
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	z-index: -1;
+}
 
 .featured-collections, .featured-records{
     height: auto;
@@ -343,7 +343,7 @@
             }
         }
     }
-    
+
 	.search
 	    .searchwrap{
 	        .search-box {

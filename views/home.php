@@ -164,6 +164,7 @@
                             <h4 class="card-title">Record Title</h4>
                         </div>
                     </a>
+										<div class="overlay"></div>
                 </li>
                 <li class="card card-records">
                     <a href="">
