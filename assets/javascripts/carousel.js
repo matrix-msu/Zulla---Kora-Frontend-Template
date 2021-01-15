@@ -128,7 +128,7 @@ function featuredCollection(){
 
     var card_width = parseInt($(collection_wrap+' .cardwrap li.card').outerWidth()) + parseInt($(collection_wrap+' .cardwrap li.card').css('marginRight')); //card width + margin-right (margin-right always = 20px)
     var cardwrap_width = $(collection_wrap+' .cardwrap').outerWidth();
-    $(collection_wrap+' .cardwrap li.card').last().css('margin-right', cardwrap_width+'px');
+    $(collection_wrap+' .cardwrap li.card').last().css('margin-right', card_width+'px');
 
     var num_cards = $(collection_wrap+' .cardwrap li.card').length;
     var cardid = 1
@@ -156,7 +156,7 @@ function featuredRecord(){
 
     var card_width = parseInt($(record_wrap+' .cardwrap li.card').outerWidth()) + parseInt($(record_wrap+' .cardwrap li.card').css('marginRight')); //card width + margin-right (margin-right always = 20px)
     var cardwrap_width = $(record_wrap+' .cardwrap').outerWidth();
-    $(record_wrap+' .cardwrap li.card').last().css('margin-right', cardwrap_width+'px');
+    $(record_wrap+' .cardwrap li.card').last().css('margin-right', card_width+'px');
 
     var num_cards = $(record_wrap+' .cardwrap ul#first li.card').length;
     var cardid = 1

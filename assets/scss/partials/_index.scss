@@ -2,11 +2,11 @@
     height: auto;
     width: 100%;
     position: relative;
-    
+
     .background {
 	    background-image: url(../images/background-landing.jpg);
 	    background-size: cover;
-	    height: 100%; 
+	    height: 100%;
 	    width: 100%;
 	    position: absolute;
 	    z-index: -2;
@@ -76,7 +76,7 @@
 }
 
 .featured-collections {
-	margin-top: -150px;	
+	margin-top: -150px;
 }
 
 .featured-records{
@@ -85,7 +85,7 @@
         transition: 400ms;
         position: relative;
         .cardwrap {
-          overflow: hidden;
+          overflow: scroll;
         }
         .arrow-left,
         .arrow-right {
@@ -124,6 +124,14 @@
           .arrow-right{
             display: block;
           }
+        }
+        .slider-overlay {
+          background-image: linear-gradient(270deg, #010415 0%, rgba(1,4,21,0.00) 100%);
+          position: absolute;
+          top: 40px;
+          right: 0;
+          width: 150px;
+          height: 90%;
         }
     }
 }
@@ -134,7 +142,7 @@
         transition: 400ms;
         position: relative;
         .cardwrap {
-          overflow: hidden;
+          overflow: scroll;
         }
         .arrow-left,
         .arrow-right {
@@ -173,6 +181,14 @@
           .arrow-right{
             display: block;
           }
+        }
+        .slider-overlay {
+          background-image: linear-gradient(270deg, #010415 0%, rgba(1,4,21,0.00) 100%);
+          position: absolute;
+          top: 40px;
+          right: 0;
+          width: 150px;
+          height: 82%;
         }
     }
 }
@@ -190,7 +206,7 @@
         .search-box {
             border-radius: 5px;
             position: relative;
-            
+
             .background{
 	            background-image: url(../images/background-landing.jpg);
 				background-size: cover;
@@ -201,10 +217,10 @@
 				top: 0;
 				z-index: -1;
             }
-            
+
             .search-contents {
-	            padding: 50px; 
-	            
+	            padding: 50px;
+
 	            h4{
 	              color: $base-light;
 	              margin-bottom: 15px;
@@ -405,7 +421,7 @@
             }
         }
     }
-    
+
 	.search
 	    .searchwrap{
 	        .search-box {
@@ -414,7 +430,7 @@
 		            .search-field{
 						width: 100%;
 		            }
-		            
+
 		            .search-submit{
 			            margin-left: 0;
 						margin-top: 10px;
@@ -432,7 +448,7 @@
         padding: 0 6%;
     }
     .collectionwrap{
-        padding: 0 6%;
+        padding: 0 0 0 6%;
     }
     .searchwrap{
         padding: 0 6%;
