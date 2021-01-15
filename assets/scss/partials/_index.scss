@@ -31,7 +31,7 @@
             a {
                 letter-spacing: 3.5px;
                 color: $accent;
-                border-bottom: 2px solid rgba(255, 195, 131, 0.25);
+                border-bottom: 2px solid $accent-translucent-25;
                 transition: border 0.2s;
                 white-space: nowrap;
             }
@@ -43,7 +43,7 @@
 }
 
  .overlay {
-	    background-image: linear-gradient(180deg, $base-dark-translucent 0%, $base-dark 100%);
+	    background-image: linear-gradient(180deg, $base-dark-translucent-15 0%, $base-dark 100%);
 	    height: 100%;
 		position: absolute;
 		width: 100%;
@@ -65,7 +65,7 @@
                 letter-spacing: 3.5px;
                 color: $accent;
                 margin-left: 15px;
-                border-bottom: 2px solid rgba(255, 195, 131, 0.25);
+                border-bottom: 2px solid $accent-translucent-25;
                 transition: border 0.2s;
             }
             a:hover {
@@ -91,7 +91,7 @@
         .arrow-right {
             display: none;
             background: url(../images/template_images/chevron-down.svg) no-repeat;
-            background-color: rgba(255,255,255,0.15);
+            background-color: $base-light-translucent-15;
             background-position: 19px;
             border: none;
             border-radius: 5px;
@@ -103,7 +103,7 @@
             z-index: 2;
             &:hover {
                 cursor: pointer;
-                background-color: rgba(255,195,131,0.9);
+                background-color: $accent-translucent-90;
             }
             &:focus {
                 outline: none;
@@ -126,7 +126,7 @@
           }
         }
         .slider-overlay {
-          background-image: linear-gradient(270deg, #010415 0%, rgba(1,4,21,0.00) 100%);
+          background-image: linear-gradient(270deg, $base-dark 0%, $base-dark-clear 100%);
           position: absolute;
           top: 40px;
           right: 0;
@@ -148,7 +148,7 @@
         .arrow-right {
             display: none;
             background: url(../images/template_images/chevron-down.svg) no-repeat;
-            background-color: rgba(255,255,255,0.15);
+            background-color: $base-light-translucent-15;
             background-position: 19px;
             border: none;
             border-radius: 5px;
@@ -160,7 +160,7 @@
             z-index: 2;
             &:hover {
                 cursor: pointer;
-                background-color: rgba(255,195,131,0.9);
+                background-color: $accent-translucent-90;
             }
             &:focus {
                 outline: none;
@@ -183,7 +183,7 @@
           }
         }
         .slider-overlay {
-          background-image: linear-gradient(270deg, #010415 0%, rgba(1,4,21,0.00) 100%);
+          background-image: linear-gradient(270deg, $base-dark 0%, $base-dark-clear 100%);
           position: absolute;
           top: 40px;
           right: 0;
@@ -230,8 +230,8 @@
 	              height: 60px;
 	              border: 1px solid rgba(255,255,255,0.45);
 	              border-radius: 5px;
-	              background-color: rgba(255,255,255,0.15);
-	              box-shadow: 0 10px 15px 0 rgba(56,63,75,0.03);
+	              background-color: $base-light-translucent-15;
+	              box-shadow: 0 10px 15px 0 $base-dark-translucent-15;
 	              padding-left: 20px;
 	            }
 	            .search-submit{
@@ -239,7 +239,7 @@
 	              height: 60px;
 	              width: 60px;
 	              border: 1px solid $accent;
-	              background-color: rgba(255,195,131,0.26);
+	              background-color: $accent-translucent-25;
 	              border-radius: 5px;
 	              transition: 0.3s;
 	            }
@@ -281,84 +281,6 @@
         }
     }
 }
-
-.options{
-    background-color: $base-dark;
-    height: auto;
-    padding: 100px 0 60px 0;
-    width: 100%;
-
-    .optionswrap{
-        margin: 0 auto;
-        max-width: 1000px;
-
-        .flex{
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-
-            .option{
-                color: $base-dark;
-                height: 275px;
-                margin-bottom: 60px;
-                position: relative;
-                text-align: center;
-                transition: border 0.3s ease;
-                width: 31%;
-
-                &:hover{
-
-                    .option-image{
-                        border: 2px solid $sub-base;
-                        box-shadow: 0 12px 13px 0 rgba(30,30,30,0.05);
-                    }
-                }
-
-                .option-image{
-                    border: 2px solid rgba(14,14,29,0.05);
-                    border-radius: 50px;
-                    background-color: #FFFFFF;
-                    box-shadow: 0 2px 3px 0 rgba(30,30,30,0.05);
-                    height: 84px;
-                    margin: 0 auto;
-                    transition: border 0.3s ease, box-shadow 0.3s ease;
-                    width: 84px;
-
-                    img{
-                        position: relative;
-                        margin: 27px 0;
-                    }
-                }
-
-                h2{
-                    font-size: 22px;
-                    padding: 25px 0px;
-                }
-
-                p{
-                    font-size: 14px;
-                    line-height: 22px;
-                    padding: 0 45px;
-                }
-
-                .option-link{
-                    color: $sub-base;
-                    font-size: 16px;
-                    line-height: 70px;
-                }
-            }
-        }
-    }
-}
-
-
 
 @media screen and (max-width: $mobile-width-400){
     .main{
@@ -421,7 +343,7 @@
             }
         }
     }
-
+    
 	.search
 	    .searchwrap{
 	        .search-box {
@@ -440,8 +362,6 @@
 	        }
 	    }
 	}
-
-
 
 @media screen and (max-width: $mobile-max-width){
     .middlewrap{
