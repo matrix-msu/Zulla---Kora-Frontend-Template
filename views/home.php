@@ -74,6 +74,7 @@
         </div>
         <button class="arrow-left" id="collections-left"></button>
         <button class="arrow-right" id="collections-right"></button>
+				<div class="slider-overlay"></div>
     </div>
 </div>
 
@@ -163,6 +164,7 @@
                             <h4 class="card-title">Record Title</h4>
                         </div>
                     </a>
+										<div class="overlay"></div>
                 </li>
                 <li class="card card-records">
                     <a href="">
@@ -228,10 +230,11 @@
         </div>
         <button class="arrow-left" id="records-left"></button>
         <button class="arrow-right" id="records-right"></button>
+				<div class="slider-overlay"></div>
     </div>
 </div>
 
-<div class="container search">	
+<div class="container search">
     <div class="container searchwrap">
         <p>START YOUR SEARCH</p>
         <div class="search-box">
