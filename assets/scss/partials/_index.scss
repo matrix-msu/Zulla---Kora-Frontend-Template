@@ -6,6 +6,7 @@
     .background {
 	    background-image: url(../images/background-landing.jpg);
 	    background-size: cover;
+      background-position: center;
 	    height: 100%;
 	    width: 100%;
 	    position: absolute;
@@ -28,16 +29,21 @@
             line-height: 28px;
             padding-top: 30px;
             width: 70%;
-            a {
-                letter-spacing: 3.5px;
-                color: $accent;
-                border-bottom: 2px solid $accent-translucent-25;
-                transition: border 0.2s;
-                white-space: nowrap;
-            }
-            a:hover {
-              border-bottom: 2px solid $accent;
-            }
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        a {
+            letter-spacing: 3.5px;
+            color: $accent;
+            border-bottom: 2px solid $accent-translucent-25;
+            transition: border 0.2s;
+            white-space: nowrap;
+            font-family: $medium;
+            padding-bottom: 5px;
+            white-space: nowrap;
+        }
+        a:hover {
+          border-bottom: 2px solid $accent;
         }
     }
 }
@@ -67,6 +73,8 @@
                 margin-left: 15px;
                 border-bottom: 2px solid $accent-translucent-25;
                 transition: border 0.2s;
+                padding-bottom: 5px;
+                white-space: nowrap;
             }
             a:hover {
               border-bottom: 2px solid $accent;
@@ -208,14 +216,15 @@
             position: relative;
 
             .background{
-	            background-image: url(../images/background-landing.jpg);
-				background-size: cover;
-	            opacity: .5;
-	            height: 100%;
-				width: 100%;
-				position: absolute;
-				top: 0;
-				z-index: -1;
+              background-image: url(../images/background-landing.jpg);
+  			      background-size: cover;
+              border-radius: 5px;
+              opacity: .5;
+              height: 100%;
+  			      width: 100%;
+  			      position: absolute;
+  			      top: 0;
+  			      z-index: -1;
             }
 
             .search-contents {
@@ -327,6 +336,9 @@
                 }
             }
         }
+    }
+    .slider-overlay {
+      display: none;
     }
 }
 

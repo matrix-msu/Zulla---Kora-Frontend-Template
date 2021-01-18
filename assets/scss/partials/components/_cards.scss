@@ -437,9 +437,10 @@
                 padding: 0 15px 15px;
                 z-index: 1;
                 .card-content{
-                    font-size: 12px;
+                    font-size: 14px;
                     margin-bottom: 0px;
                     min-width: 150px;
+                    line-height: 1.2;
                 }
                 .card-title{
                     color: $base-light;

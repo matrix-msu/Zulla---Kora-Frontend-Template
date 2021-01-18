@@ -4,7 +4,8 @@
         <h1>Followed by some brief about information, or site tagline.</h1>
         <p>Site Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi &nbsp;&nbsp; <a>LEARN MORE</a></p>
+          quis nostrud exercitation ullamco laboris nisi  </p>
+				<a>LEARN MORE</a>
     </div>
     <div class="overlay"></div>
 </div>
@@ -17,7 +18,7 @@
             <ul class="cards">
                 <li class="card card-collection">
                     <a href="">
-                        <img src="<?php echo BASE_IMAGE_URL;?>background-landing.jpg">
+                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>3.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
                             <h3 class="card-title">Long Long Long Collection Title</h3>
@@ -28,7 +29,7 @@
                 </li>
                 <li class="card card-collection">
                     <a href="">
-                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
+                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>4.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
                             <h3 class="card-title">Collection Title</h3>
@@ -46,7 +47,7 @@
                 </li>
                 <li class="card card-collection">
                     <a href="">
-                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
+                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>2.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
                             <h3 class="card-title">Collection Title</h3>
@@ -59,7 +60,7 @@
                 </li>
                 <li class="card card-collection">
                     <a href="">
-                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
+                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>1.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
                             <h3 class="card-title">Collection Title</h3>
@@ -85,7 +86,7 @@
             <ul class="cards" id= "first">
                 <li class="card card-records">
                     <a href="">
-                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
+                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>5.jpg">
                         <div class="card-component">
                             <p class="card-content">Metadata Content</p>
                             <p class="card-content">Other Metadata Content</p>
@@ -96,7 +97,7 @@
                 </li>
                 <li class="card card-records">
                     <a href="">
-                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
+                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>2.jpg">
                         <div class="card-component">
                             <p class="card-content">Metadata Content</p>
                             <h4 class="card-title">Record Title</h4>
@@ -106,7 +107,7 @@
                 </li>
                 <li class="card card-records">
                     <a href="">
-                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
+                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>1.jpg">
                         <div class="card-component">
                             <p class="card-content">Metadata Content</p>
                             <p class="card-content">Other Metadata Content</p>
@@ -118,7 +119,7 @@
                 </li>
                 <li class="card card-records">
                     <a href="">
-                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
+                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>4.jpg">
                         <div class="card-component">
                             <p class="card-content">Metadata Content</p>
                             <p class="card-content">Other Metadata Content</p>
@@ -130,7 +131,7 @@
                 </li>
                 <li class="card card-records">
                     <a href="">
-                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
+                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>3.jpg">
                         <div class="card-component">
                             <p class="card-content">Metadata Content</p>
                             <p class="card-content">Other Metadata Content</p>
@@ -156,7 +157,7 @@
             <ul class="cards">
                 <li class="card card-records">
                     <a href="">
-                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
+                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>4.jpg">
                         <div class="card-component">
                             <p class="card-content">Metadata Content</p>
                             <p class="card-content">Other Metadata Content</p>
@@ -168,7 +169,7 @@
                 </li>
                 <li class="card card-records">
                     <a href="">
-                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
+                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>1.jpg">
                         <div class="card-component">
                             <p class="card-content">Metadata Content</p>
                             <p class="card-content">Other Metadata Content</p>
@@ -180,7 +181,7 @@
                 </li>
                 <li class="card card-records">
                     <a href="">
-                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
+                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>2.jpg">
                         <div class="card-component">
                             <p class="card-content">Metadata Content</p>
                             <p class="card-content">Other Metadata Content</p>
@@ -192,7 +193,7 @@
                 </li>
                 <li class="card card-records">
                     <a href="">
-                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
+                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>5.jpg">
                         <div class="card-component">
                             <p class="card-content">Metadata Content</p>
                             <p class="card-content">Other Metadata Content</p>
@@ -204,7 +205,7 @@
                 </li>
                 <li class="card card-records">
                     <a href="">
-                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
+                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>2.jpg">
                         <div class="card-component">
                             <p class="card-content">Metadata Content</p>
                             <p class="card-content">Other Metadata Content</p>
@@ -216,7 +217,7 @@
                 </li>
                 <li class="card card-records">
                     <a href="">
-                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>landing.jpg">
+                        <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>1.jpg">
                         <div class="card-component">
                             <p class="card-content">Metadata Content</p>
                             <p class="card-content">Other Metadata Content</p>
