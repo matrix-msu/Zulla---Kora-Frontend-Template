@@ -1,138 +1,153 @@
 // Collection and Record Card General Styling //
-    .cards{
-        display: flex;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        width: fit-content;
-        margin-bottom: 15px;
-    }
-    li.card-collection{
-        cursor: pointer;
-        height: 245px;
-        width: 410px;
-        margin-right: 15px;
-        border: 2px solid transparent;
-        border-radius: 5px;
-        box-shadow: 0 10px 15px 0 rgba(0,0,0,0.15);
-        transition: all 0.3s;
-        position: relative;
-        a {
-            img {
-              height: 245px;
-              width: 410px;
-              object-fit: cover;
-              position:absolute;
-              border-radius: 5px;
-            }
-            p {
-                letter-spacing: 0;
-            }
-            .card-component{
-                padding-left: 30px;
-                position: absolute;
-                bottom: 0;
-                padding: 30px;
-                z-index: 1;
-                color: $base-light;
-                .card-resource{
-                    font-size: 14px;
-                    margin-bottom: 10px;
-                    text-transform: capitalize;
-                }
-                .card-title{
-                    color: $base-light;
-                    margin-bottom: 15px;
-                    line-height: 1.2;
-                    display: -webkit-box;
-                    overflow: hidden;
-                    -webkit-line-clamp: 2;
-                    -webkit-box-orient: vertical;
-                }
-                .card-desc{
-                    display: -webkit-box;
-                    overflow: hidden;
-                    -webkit-line-clamp: 3;
-                    -webkit-box-orient: vertical;
-                    text-transform: capitalize;
-                }
-            }
+.cards{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+li.card-collection{
+    cursor: pointer;
+    height: 245px;
+    width: 410px;
+    margin-right: 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.15);
+    transition: all 0.3s;
+    position: relative;
+    a {
+        img {
+          height: 245px;
+          width: 410px;
+          object-fit: cover;
+          position:absolute;
+          border-radius: 5px;
         }
-        .overlay{
+        p {
+            letter-spacing: 0;
+        }
+        .card-component{
+            padding-left: 30px;
             position: absolute;
-            width: 100%;
-            height: 100%;
-            border-radius: 5px;
-            z-index: 0;
-            background: linear-gradient(180deg, rgba(1,4,21,0.25) 0%, rgba(1,4,21,0.8) 100%);
-        }
-        &:hover{
-            border: 2px solid $accent;
-        }
-    }
-
-    li.card-records{
-        cursor: pointer;
-        height: 200px;
-        width: 200px;
-        margin-right: 15px;
-        border: 2px solid transparent;
-        border-radius: 5px;
-        box-shadow: 0 10px 15px 0 rgba(0,0,0,0.15);
-        transition: all 0.3s;
-        position: relative;
-        a {
-
-            img {
-              height: 200px;
-              width: 200px;
-              object-fit: cover;
-              position:absolute;
-              border-radius: 5px;
+            bottom: 0;
+            padding: 30px;
+            z-index: 1;
+            color: $base-light;
+            .card-resource{
+                font-size: 14px;
+                margin-bottom: 10px;
+                text-transform: capitalize;
             }
-            p {
-                letter-spacing: 0;
-            }
-            .card-component{
-                position: absolute;
-                bottom: 0;
-                padding: 15px;
-                z-index: 1;
+            .card-title{
                 color: $base-light;
-                .card-content{
-                    font-size: 14px;
-                    margin-bottom: 0px;
-                    min-width: 150px;
-                    line-height: 1.2;
-                    text-transform: capitalize;
-                }
-                .card-title{
-                    color: $base-light;
-                    margin-top: 10px;
-                    line-height: 1.2;
-                    display: -webkit-box;
-                    overflow: hidden;
-                    -webkit-line-clamp: 4;
-                    -webkit-box-orient: vertical
-                }
+                margin-bottom: 15px;
+                line-height: 1.2;
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+            .card-desc{
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                text-transform: capitalize;
             }
         }
-        .overlay{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border-radius: 5px;
-            z-index: 0;
-            background: linear-gradient(180deg, rgba(1,4,21,0.25) 0%, rgba(1,4,21,0.8) 100%);
+    }
+    .overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        z-index: 0;
+        background: linear-gradient(180deg, rgba(1,4,21,0.25) 0%, rgba(1,4,21,0.8) 100%);
+    }
+    &:hover{
+        border: 2px solid $accent;
+    }
+}
+
+li.card-records{
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+    margin-right: 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.15);
+    transition: all 0.3s;
+    position: relative;
+    a {
+
+        img {
+          height: 200px;
+          width: 200px;
+          object-fit: cover;
+          position:absolute;
+          border-radius: 5px;
         }
-        &:hover{
-            border: 2px solid $accent;
+        p {
+            letter-spacing: 0;
+        }
+        .card-component{
+            position: absolute;
+            bottom: 0;
+            padding: 15px;
+            z-index: 1;
+            color: $base-light;
+            .card-content{
+                font-size: 14px;
+                margin-bottom: 0px;
+                min-width: 150px;
+                line-height: 1.2;
+                text-transform: capitalize;
+            }
+            .card-title{
+                color: $base-light;
+                margin-top: 10px;
+                line-height: 1.2;
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical
+            }
         }
     }
+    .overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        z-index: 0;
+        background: linear-gradient(180deg, rgba(1,4,21,0.25) 0%, rgba(1,4,21,0.8) 100%);
+    }
+    &:hover{
+        border: 2px solid $accent;
+    }
+}
 
 
 // Card Grid //
-
+.cards.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 100%;
+  li.card-collection{
+    width: 31%;
+    margin: 0 0 20px;
+    a {
+        img {
+          width: 100%;
+        }
+      }
+  }
+}
 
 
 

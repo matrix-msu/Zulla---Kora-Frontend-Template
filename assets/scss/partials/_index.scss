@@ -89,14 +89,6 @@
 
 .featured-records{
 	padding: 0 0 65px;
-  .slider-overlay {
-    background-image: linear-gradient(270deg, $base-dark 0%, $base-dark-clear 100%);
-    position: absolute;
-    top: 40px;
-    right: 0;
-    width: 150px;
-    height: 90%;
-  }
 }
 
 .collectionwrap{
@@ -136,7 +128,7 @@
     }
     .arrow-left {
         background-color: $base-light-translucent-15;
-        margin-left: 40px;
+        margin-left: -20px;
         transform: rotate(90deg);
         &:hover {
           background-color: $accent;
@@ -152,7 +144,7 @@
       background-image: linear-gradient(270deg, $base-dark 0%, $base-dark-clear 100%);
       position: absolute;
       top: 40px;
-      right: 0;
+      right: 6%;
       width: 150px;
       height: 82%;
     }

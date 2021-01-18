@@ -1,4 +1,4 @@
-<div class="container main">
+<div class="main">
 	<div class="background"></div>
     <div class="container middlewrap">
         <h1>Followed by some brief about information, or site tagline.</h1>

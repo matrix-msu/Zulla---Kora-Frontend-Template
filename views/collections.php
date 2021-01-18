@@ -1,4 +1,4 @@
-<div class="container main">
+<div class="main">
 	<div class="background"></div>
     <div class="container middlewrap">
         <h1>Collections</h1>
@@ -75,11 +75,10 @@
     </div>
 </div>
 
-<div class="card-grid all-collections">
-    <div class="container collectionwrap">
+<div class="all-collections container">
         <h5>ALL COLLECTIONS</h5>
         <div>
-            <ul class="cards">
+            <ul class="cards grid">
                 <li class="card card-collection">
                     <a href="">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>3.jpg">
@@ -137,10 +136,6 @@
                 </li>
             </ul>
         </div>
-        <button class="arrow-left" id="collections-left"></button>
-        <button class="arrow-right" id="collections-right"></button>
-				<div class="slider-overlay"></div>
-    </div>
 </div>
 
 <script src="<?php echo BASE_JS_URL;?>carousel.js"></script>
