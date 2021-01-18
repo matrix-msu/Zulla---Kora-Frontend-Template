@@ -13,7 +13,7 @@
 <!--  Cards/Column container  -->
 <div class="card-slider featured-collections">
     <div class="container collectionwrap">
-        <p>FEATURED COLLECTIONS<a>VIEW ALL</a></p>
+        <h5>FEATURED COLLECTIONS<a href="<?php echo BASE_URL;?>collections">VIEW ALL</a></h5>
         <div class="cardwrap" id="cardwrap-collections">
             <ul class="cards">
                 <li class="card card-collection">
@@ -81,7 +81,7 @@
 
 <div class="card-slider featured-records">
     <div class="container collectionwrap">
-        <p>FEATURED RECORDS<a>VIEW ALL</a></p>
+        <h5>FEATURED RECORDS<a>VIEW ALL</a></h5>
         <div class="cardwrap" id="cardwrap-records">
             <ul class="cards" id= "first">
                 <li class="card card-records">
