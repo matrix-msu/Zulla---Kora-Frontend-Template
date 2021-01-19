@@ -4,25 +4,22 @@
        position: relative;
 
        .search-field{
-           border: 1px solid transparent;
-           background-color: rgba(255,255,255,0.2);
-           box-shadow: 0 15px 20px 0 rgba(0,0,0,0.15);
+          background: transparent;
            color: $base-light;
            float: left;
-           font-family: montserratregular;
            font-size: 16px;
            height: 50px;
            margin: 0;
            outline: none;
            padding-left: 10px;
-           transition: border 0.3s ease;
+           transition: all 0.2s ease;
            width: calc(100% - 82px);
 
            &:hover{
-               border: 1px solid $sub-base;
+
            }
            &:focus-within{
-                   border: 1px solid $sub-base;
+
            }
 
            input {
@@ -32,7 +29,7 @@
 
        .search-submit{
            border: none;
-           background-color: $sub-base;
+           background-color: transparent;
            background-image: url(../images/template_images/search.svg);
            background-position: center;
            background-repeat: no-repeat;
@@ -68,22 +65,7 @@ div.searched-term {
         margin-left: 5px;
     }
 }
-.search form div.search-field {
-    box-sizing: border-box;
-    display: flex;
-    height: 50px!important;
-    overflow: hidden;
-    position: relative;
-    white-space: nowrap;
-    input#search-field {
-        background-color: unset!important;
-        box-shadow: none!important;
-        border:none!important;
-        order: 999;
-        padding: 0!important;
-        width: -webkit-fill-available;
-    }
-}
+
 .column .cardwrap .row li a {color:$base-dark;}
 .search-button-header{
     margin-bottom: 40px;

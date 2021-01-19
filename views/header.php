@@ -14,7 +14,7 @@
 
                     <li class="nav-item"><a class="nav-link unselected" id="index" href="<?php echo BASE_URL;?>essays">ESSAYS</a></li>
                     <li class="nav-item"><a class="nav-link unselected" id="index" href="<?php echo BASE_URL;?>collections">COLLECTIONS</a></li>
-                    
+
                     <li class="nav-item" id="drop-link">
                     <a class="nav-link unselected" id="more">About</a>
                     	<span class="drop-carat">
@@ -35,7 +35,7 @@
                             <img src="<?php echo BASE_IMAGE_URL;?>Search.svg" alt="Search.svg">
                         </a>
                     </li>
-                   
+
                 </ul>
             </div>
     </div>

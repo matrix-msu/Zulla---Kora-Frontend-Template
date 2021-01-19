@@ -12,6 +12,7 @@ $GLOBALS['routes'] = array(
     'about' => 'about.php',
     'cards' => 'components/cards.php',
     'carousel' => 'components/carousel.php',
+    'collections' => 'collections.php',
     'drawers' => 'components/drawers.php',
     'fullRecord' => 'components/fullrecord.php',
     'tabs' => 'components/tabs.php',
