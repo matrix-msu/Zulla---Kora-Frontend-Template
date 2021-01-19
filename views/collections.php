@@ -85,7 +85,7 @@
 						</form>
 					</div>
 				</div>
-        <div>
+        <div> 
             <ul class="cards grid">
                 <li class="card card-collection">
                     <a href="">
