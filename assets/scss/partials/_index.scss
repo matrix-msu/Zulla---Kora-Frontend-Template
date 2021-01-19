@@ -63,10 +63,9 @@
     .collectionwrap{
         margin: 0 auto;
         max-width: 1000px;
-        p {
+        h5 {
             color: $base-light;
-            letter-spacing: 3.5px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             a {
                 letter-spacing: 3.5px;
                 color: $accent;
@@ -83,126 +82,76 @@
     }
 }
 
-.featured-collections {
-	margin-top: -150px;
+.featured-collections{
+	padding: 65px 0 65px;
+  margin-top: -150px;
 }
 
 .featured-records{
 	padding: 0 0 65px;
-    .collectionwrap{
-        transition: 400ms;
-        position: relative;
-        .cardwrap {
-          overflow: scroll;
-        }
-        .arrow-left,
-        .arrow-right {
-            display: none;
-            background: url(../images/template_images/chevron-down.svg) no-repeat;
-            background-color: $base-light-translucent-15;
-            background-position: 19px;
-            border: none;
-            border-radius: 5px;
-            height: 50px;
-            position: absolute;
-            top: 50%;
-            transition: 400ms;
-            width: 50px;
-            z-index: 2;
-            &:hover {
-                cursor: pointer;
-                background-color: $accent-translucent-90;
-            }
-            &:focus {
-                outline: none;
-            }
-        }
+}
 
-        .arrow-right {
-            margin-right: 40px;
-            right: 0;
-            transform: rotate(-90deg);
-        }
-        .arrow-left {
-            margin-left: 40px;
-            transform: rotate(90deg);
-        }
+.collectionwrap{
+    transition: all .2s ease-in-out;
+    position: relative;
+    .cardwrap {
+      overflow: scroll;
+    }
+    .arrow-left,
+    .arrow-right {
+        opacity: 0;
+        background: url(../images/template_images/chevron-down.svg) no-repeat;
+        background-position: 19px;
+        border: none;
+        border-radius: 5px;
+        height: 50px;
+        position: absolute;
+        top: 48%;
+        transition: all .2s ease-in-out;
+        width: 50px;
+        z-index: 2;
         &:hover {
-          .arrow-left,
-          .arrow-right{
-            display: block;
-          }
+            cursor: pointer;
         }
-        .slider-overlay {
-          background-image: linear-gradient(270deg, $base-dark 0%, $base-dark-clear 100%);
-          position: absolute;
-          top: 40px;
-          right: 0;
-          width: 150px;
-          height: 90%;
+        &:focus {
+            outline: none;
         }
+    }
+    .arrow-right {
+        background-color: $accent-translucent-90;
+        margin-right: 40px;
+        right: 0;
+        transform: rotate(-90deg);
+        &:hover {
+          background-color: $accent;
+        }
+    }
+    .arrow-left {
+        background-color: $base-light-translucent-15;
+        margin-left: -20px;
+        transform: rotate(90deg);
+        &:hover {
+          background-color: $accent;
+        }
+    }
+    &:hover {
+      .arrow-left,
+      .arrow-right{
+        opacity: 100%;
+      }
+    }
+    .slider-overlay {
+      background-image: linear-gradient(270deg, $base-dark 0%, $base-dark-clear 100%);
+      position: absolute;
+      top: 40px;
+      right: 6%;
+      width: 150px;
+      height: 82%;
     }
 }
 
-.featured-collections{
-	padding: 65px 0 65px;
-    .collectionwrap{
-        transition: 400ms;
-        position: relative;
-        .cardwrap {
-          overflow: scroll;
-        }
-        .arrow-left,
-        .arrow-right {
-            display: none;
-            background: url(../images/template_images/chevron-down.svg) no-repeat;
-            background-color: $base-light-translucent-15;
-            background-position: 19px;
-            border: none;
-            border-radius: 5px;
-            height: 50px;
-            position: absolute;
-            top: 50%;
-            transition: 400ms;
-            width: 50px;
-            z-index: 2;
-            &:hover {
-                cursor: pointer;
-                background-color: $accent-translucent-90;
-            }
-            &:focus {
-                outline: none;
-            }
-        }
 
-        .arrow-right {
-            margin-right: 40px;
-            right: 0;
-            transform: rotate(-90deg);
-        }
-        .arrow-left {
-            margin-left: 40px;
-            transform: rotate(90deg);
-        }
-        &:hover {
-          .arrow-left,
-          .arrow-right{
-            display: block;
-          }
-        }
-        .slider-overlay {
-          background-image: linear-gradient(270deg, $base-dark 0%, $base-dark-clear 100%);
-          position: absolute;
-          top: 40px;
-          right: 0;
-          width: 150px;
-          height: 82%;
-        }
-    }
-}
 .search{
-    height: auto;
-    width: 100%;
     .searchwrap{
         margin: 0 auto;
         max-width: 1000px;
@@ -259,120 +208,37 @@
         }
     }
 }
-.about{
-    background-color: $base-dark;
-    height: auto;
-    padding: 65px 0;
-    width: 100%;
-
-    .aboutwrap{
-        margin: 0 auto;
-        max-width: 1000px;
-
-        p{
-            color: $base-light;
-            line-height: 32px;
-            position: relative;
-            text-align: left;
-
-            a{
-                border-bottom: 2px solid $sub-base;
-                color: $sub-base;
-                margin-left: 4px;
-                padding-bottom: 4px;
-                transition: padding 0.3s ease;
-                white-space: nowrap;
-
-                &:hover{
-                    padding-bottom: 6px;
-                }
-            }
-        }
-    }
-}
 
 @media screen and (max-width: $mobile-width-400){
-    .main{
-
-        .middlewrap{
-
-            h1{
-                font-size: 45px;
-            }
-            h3{
-                font-size: 19px;
-                margin: 30px 0;
-            }
-        }
-    }
-
-    .about{
-        padding: 30px 0;
-
-        .aboutwrap{
-            padding: 0 4%;
-
-            p{
-                font-size: 16px;
-            }
-        }
-    }
-
-    .optionswrap{
-        padding: 0 6%;
-    }
 
 }
 
 @media screen and (max-width: $mobile-card-breakpoint){
-    .options{
-
-        .optionswrap{
-
-            .flex{
-
-                .option{
-                    width: 48%;
-                }
-            }
-        }
-    }
     .slider-overlay {
       display: none;
     }
 }
 
 @media screen and (max-width: $mobile-card-breakpoint-2){
-    .options{
 
-        .optionswrap{
-
-            .flex{
-
-                .option{
-                    width: 100%;
-                }
-            }
-        }
-    }
-
-	.search
+	.search {
 	    .searchwrap{
 	        .search-box {
 	            .search-contents {
 		            padding: 30px;
 		            .search-field{
-						width: 100%;
+						       width: 100%;
 		            }
 
 		            .search-submit{
 			            margin-left: 0;
-						margin-top: 10px;
-						width: 100%;
+			            margin-top: 10px;
+			            width: 100%;
 		            }
 		        }
 	        }
 	    }
+    }
 	}
 
 @media screen and (max-width: $mobile-max-width){
@@ -381,15 +247,5 @@
     }
     .collectionwrap{
         padding: 0 0 0 6%;
-    }
-    .searchwrap{
-        padding: 0 6%;
-    }
-
-    .aboutwrap{
-        padding: 0 6%;
-    }
-    .optionswrap{
-        padding: 0 6%;
     }
 }

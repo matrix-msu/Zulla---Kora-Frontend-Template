@@ -1,0 +1,60 @@
+.all-collections {
+  .top {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    h5 {
+      color: $base-light;
+    }
+    .search {
+      margin-right: -30px;
+      .search-field {
+        text-align: right;
+        height: 45px;
+        &:hover {
+        }
+        &::-webkit-input-placeholder {
+          opacity: .6;
+          font-family: $medium-italic;
+        }
+        &::-moz-placeholder {
+          opacity: .6;
+          font-family: $medium-italic;
+        }
+      }
+      .search-submit {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: $mobile-card-breakpoint-2){
+  .all-collections {
+    .top {
+      h5 {
+        width: 100%;
+      }
+      .search {
+        margin: 10px 0 0 -10px;
+        .search-field {
+          width: 120px;
+          &:hover {
+          }
+          &::-webkit-input-placeholder {
+
+          }
+          &::-moz-placeholder {
+
+          }
+        }
+        .search-submit {
+
+        }
+      }
+    }
+  }
+}

@@ -1,638 +1,173 @@
-.column{
-    background-color: $base-dark;
-    height: auto;
-    padding: 100px 0;
-    width: 100%;
-
-    .cardwrap{
-        margin: 0 auto;
-        max-width: 1000px;
-
-        .row{
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            flex-wrap: wrap;
-            list-style-type: none;
-            margin: 50px 0 0 0;
-            padding: 0;
-
-            li{
-                margin-bottom: 20px;
-                width: 31%;
-
-                .cards{
-                    border: 2px solid rgba(13,18,48,0.05);
-                    box-shadow: 0 2px 3px 0 rgba(30,30,30,0.05);
-                    color: $base-light;
-                    cursor: pointer;
-                    height: 275px;
-                    padding: 20px;
-                    position: relative;
-                    transition: border 0.3s ease, box-shadow 0.3s ease;
-
-                    p{
-                        display: -webkit-box;
-                        font-size: 14px;
-                        line-height: 1.2em;
-                        margin-bottom: 22px;
-                        max-height: 2.4em; // = line-height * line-clamp (UNITS MUST BE EM)
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        -webkit-line-clamp: 2;
-                        -webkit-box-orient: vertical;
-                    }
-
-                    .card-title{
-                        font-family: bigcaslonblack;
-                        font-weight: 900;
-                        font-size: 25px;
-                        height: 55px;
-                    }
-                    .card-learn-more{
-                        bottom: 15px;
-                        cursor: pointer;
-                        position: absolute;
-                        transition: color 0.3s ease;
-                    }
-
-                    &:hover{
-                        border: 2px solid $sub-base;
-                        box-shadow: 0 12px 13px 0 rgba(30,30,30,0.05);
-
-                        .card-learn-more{
-                            color: $sub-base;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-//originally _browse.scss
-.dictionary{
-
-    .cardwrap{
-
-        .row{
-
-            li{
-
-                .cards{
-                    height: 200px;
-                }
-            }
-        }
-    }
-}
-//originally _imageCardGrid.scss
-.image-card-grid {
+// Collection and Record Card General Styling //
+.cards{
     display: flex;
-    flex-wrap: wrap;
-    max-width: unset;
+    list-style-type: none;
     padding: 0;
-    .image-grid-column {
-        flex: 25%;
-        max-width: 25%;
-        width: 25%;
-        .image-grid-card {
-            position: relative;
-            transition: 400ms;
-            .border {
-                box-sizing: border-box;
-                height: 100%;
-                position: absolute;
-                transition: 200ms;
-                width: 100%;
-                a {
-                    height: 100%;
-                    position: absolute;
-                    width: 100%;
-                }
-            }
-            img {
-                height: 100%;
-                object-fit: cover;
-                width: 100%;
-            }
-            .title {
-                background: rgba(13, 18, 48, 0.7);
-                color: white;
-                height: 100%;
-                overflow: hidden;
-                position: absolute;
-                top: 0;
-                transition: 400ms;
-                width: 100%;
-                .title-wrap {
-                    margin: auto 30px 30px;
-                    position: absolute;
-                    bottom: 0;
-                    h4 {
-                        display: -webkit-box;
-                        font-size: 20px;
-                        line-height: 1.2em;
-                        /* max-height = line-height (1.2) * lines max number (4) */
-                        max-height: 4.8em;
-                        overflow: hidden;
-                        -webkit-line-clamp: 4;
-                        -webkit-box-orient: vertical;
-                    }
-                }
-            }
-            &:hover {
-                cursor: pointer;
-                .border {
-                    z-index: 1;
-                }
-                .title {
-                    background: rgba(13, 18, 48, 0.0);
-                    color: transparent;
-                }
-            }
-        }
-    }
+    margin: 0;
+    width: fit-content;
+    margin-bottom: 15px;
 }
-
-//_imageCardGrid2.scss file
-.image-card-grid-2 {
-    .row {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 40px;
-        .image-grid-2-card {
-            overflow: hidden;
-            position: relative;
-            transition: 400ms;
-            width: 48%;
-            .border {
-                box-sizing: border-box;
-                height: 100%;
-                position: absolute;
-                transition: 200ms;
-                width: 100%;
-                a {
-                    height: 100%;
-                    position: absolute;
-                    width: 100%;
-                }
+li.card-collection{
+    cursor: pointer;
+    height: 245px;
+    width: 410px;
+    margin-right: 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.15);
+    transition: all 0.3s;
+    position: relative;
+    a {
+        img {
+          height: 245px;
+          width: 410px;
+          object-fit: cover;
+          position:absolute;
+          border-radius: 5px;
+        }
+        p {
+            letter-spacing: 0;
+        }
+        .card-component{
+            padding-left: 30px;
+            position: absolute;
+            bottom: 0;
+            padding: 30px;
+            z-index: 1;
+            color: $base-light;
+            .card-resource{
+                font-size: 14px;
+                margin-bottom: 10px;
+                text-transform: capitalize;
             }
-            img {
-                height: 100%;
-                object-fit: cover;
-                width: 100%;
-            }
-            .title {
+            .card-title{
                 color: $base-light;
-                opacity: 1;
-                position: absolute;
-                bottom: 0;
-                transition: 400ms;
-                .title-wrap {
-                    margin: auto 30px 30px;
-                    h4 {
-                        display: -webkit-box;
-                        font-size: 25px;
-                        line-height: 1.2em;
-                        /* max-height = line-height (1.2) * lines max number (3) */
-                        max-height: 3.6em;
-                        overflow: hidden;
-                        -webkit-line-clamp: 3;
-                        -webkit-box-orient: vertical;
-                    }
-                }
-            }
-            .description {
-                background: rgba(13, 18, 48, 0.8);
-                height: 100%;
-                opacity: 0;
+                margin-bottom: 15px;
+                line-height: 1.2;
+                display: -webkit-box;
                 overflow: hidden;
-                position: absolute;
-                bottom: 0;
-                transition: 250ms;
-                width: 100%;
-                p {
-                    box-sizing: border-box;
-                    color: white;
-                    display: -webkit-box;
-                    font-size: 0.9em;
-                    line-height: 1.5em;
-                    margin: 20px;
-                    max-height: 16.5em;
-                    overflow: hidden;
-                    -webkit-line-clamp: 11;
-                    -webkit-box-orient: vertical;
-                }
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
             }
-            &:hover {
-                background-color: rgba(13,18,48,0.8);
-                box-shadow: 0 20px 25px 0 rgba(0,0,0,0.25);
-                cursor: pointer;
-                .border {
-                    z-index: 1;
-                }
-                .title {
-                    opacity: 0;
-                }
-                .description {
-                    opacity: 1;
-                }
-            }
-        }
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-}
-
-//_essays.scss
-.essays{
-    background-color: $base-light;
-    padding: 65px 0 0 0;
-
-    .aboutwrap{
-
-        p{
-            color: $base-dark;
-        }
-    }
-}
-
-.essaycard{
-    padding: 100px 0 0 0;
-
-    .cardwrap{
-
-        .row{
-
-            li{
-
-                .cards{
-
-                    .card-title{
-                        display: -webkit-box;
-                        font-size: 1.375em; // 1em = 16px want 22px -- 1.375em = 22px
-                        /*height: 75px;*/
-                        height: unset;
-                        line-height: 1.2em;
-                        max-height: 3.6em; // = line-height (1.2em here) * line-clamp
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        -webkit-box-orient: vertical;
-                        -webkit-line-clamp: 3;
-                    }
-
-                    p{
-                        display: -webkit-box;
-                        font-size: .875em; // 14px
-                        line-height: 1.2em;
-                        max-height: 9.6em; // = line-height (1em defualt) * line-clamp
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        -webkit-box-orient: vertical;
-                        -webkit-line-clamp: 8;
-                    }
-                }
+            .card-desc{
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                text-transform: capitalize;
             }
         }
     }
-}
-
-.essaymultiplerowcards{
-
-    .cardwrap{
-
-        .row{
-
-            li{
-
-                .cards{
-
-                    .card-title{
-                        display: -webkit-box;
-                        font-size: 1.375em;
-                        /*height: 75px;*/
-                        height: unset;
-                        line-height: 1.2em;
-                        max-height: 3.6em; // = line-height (1.2em here) * line-clamp
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        -webkit-box-orient: vertical;
-                        -webkit-line-clamp: 3;
-                    }
-
-                    p{
-                        display: -webkit-box;
-                        font-size: .875em; // 14px
-                        line-height: 1.2em;
-                        max-height: 9.6em; // = line-height (1em defualt) * line-clamp
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        -webkit-box-orient: vertical;
-                        -webkit-line-clamp: 8;
-                    }
-                }
-            }
-        }
-    }
-}
-
-.card-slider{
-    .cards{
-        display: flex;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        width: fit-content;
-        margin-bottom: 15px;
-    }
-    li.card-collection{
-        cursor: pointer;
-        height: 245px;
-        width: 410px;
-        margin-right: 15px;
-        border: 2px solid transparent;
+    .overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
         border-radius: 5px;
-        box-shadow: 0 10px 15px 0 rgba(0,0,0,0.15);
-        transition: all 0.3s;
-        position: relative;
-        a {
-            img {
-              height: 245px;
-              width: 410px;
-              object-fit: cover;
-              position:absolute;
-              border-radius: 5px;
-            }
-            p {
-                letter-spacing: 0;
-            }
-            .card-component{
-                padding-left: 30px;
-                position: absolute;
-                bottom: 0;
-                padding: 0 30px;
-                z-index: 1;
-                .card-resource{
-                    font-size: 13px;
-                    margin-bottom: 10px;
-                }
-                .card-title{
-                    color: $base-light;
-                    margin-bottom: 15px;
-                    line-height: 1.2;
-                    display: -webkit-box;
-                    overflow: hidden;
-                    -webkit-line-clamp: 2;
-                    -webkit-box-orient: vertical
-                }
-                .card-desc{
-                    display: -webkit-box;
-                    overflow: hidden;
-                    -webkit-line-clamp: 3;
-                    -webkit-box-orient: vertical
-                }
-            }
+        z-index: 0;
+        background: linear-gradient(180deg, rgba(1,4,21,0.25) 0%, rgba(1,4,21,0.8) 100%);
+    }
+    &:hover{
+        border: 2px solid $accent;
+    }
+}
+
+li.card-records{
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+    margin-right: 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.15);
+    transition: all 0.3s;
+    position: relative;
+    a {
+
+        img {
+          height: 200px;
+          width: 200px;
+          object-fit: cover;
+          position:absolute;
+          border-radius: 5px;
         }
-        .overlay{
+        p {
+            letter-spacing: 0;
+        }
+        .card-component{
             position: absolute;
-            width: 100%;
-            height: 100%;
-            border-radius: 5px;
-            z-index: 0;
-            background: linear-gradient(180deg, rgba(1,4,21,0.25) 0%, rgba(1,4,21,0.8) 100%);
-        }
-        &:hover{
-            border: 2px solid $accent;
+            bottom: 0;
+            padding: 15px;
+            z-index: 1;
+            color: $base-light;
+            .card-content{
+                font-size: 14px;
+                margin-bottom: 0px;
+                min-width: 150px;
+                line-height: 1.2;
+                text-transform: capitalize;
+            }
+            .card-title{
+                color: $base-light;
+                margin-top: 10px;
+                line-height: 1.2;
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical
+            }
         }
     }
-
-    li.card-records{
-        cursor: pointer;
-        height: 200px;
-        width: 200px;
-        margin-right: 15px;
-        border: 2px solid transparent;
+    .overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
         border-radius: 5px;
-        box-shadow: 0 10px 15px 0 rgba(0,0,0,0.15);
-        transition: all 0.3s;
-        position: relative;
-        a {
-
-            img {
-              height: 200px;
-              width: 200px;
-              object-fit: cover;
-              position:absolute;
-              border-radius: 5px;
-            }
-            p {
-                letter-spacing: 0;
-            }
-            .card-component{
-                position: absolute;
-                bottom: 0;
-                padding: 0 15px 15px;
-                z-index: 1;
-                .card-content{
-                    font-size: 14px;
-                    margin-bottom: 0px;
-                    min-width: 150px;
-                    line-height: 1.2;
-                }
-                .card-title{
-                    color: $base-light;
-                    margin-top: 10px;
-                    line-height: 1.2;
-                    display: -webkit-box;
-                    overflow: hidden;
-                    -webkit-line-clamp: 4;
-                    -webkit-box-orient: vertical
-                }
-            }
-        }
-        .overlay{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border-radius: 5px;
-            z-index: 0;
-            background: linear-gradient(180deg, rgba(1,4,21,0.25) 0%, rgba(1,4,21,0.8) 100%);
-        }
-        &:hover{
-            border: 2px solid $accent;
-        }
+        z-index: 0;
+        background: linear-gradient(180deg, rgba(1,4,21,0.25) 0%, rgba(1,4,21,0.8) 100%);
     }
-}
-@media screen and (min-width: $mobile-card-breakpoint){
-    .column{
-
-        .cardwrap{
-
-            .row{
-
-                li{
-
-                    &:nth-child(3n+2){
-                        margin-left: 3.5%;
-                        margin-right: 3.5%;
-                    }
-                }
-            }
-        }
+    &:hover{
+        border: 2px solid $accent;
     }
 }
 
-@media screen and (max-width: $mobile-width-400){
-    .column{
-        padding: 50px 0;
 
-        .cardwrap{
-            padding: 0 4%;
-
-            .column-header{
-                font-size: 30px;
-            }
+// Card Grid //
+.cards.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 100%;
+  li.card-collection{
+    width: 31%;
+    margin: 0 0 2.5%;
+    a {
+        img {
+          width: 100%;
         }
-
-    }
+      }
+  }
+  &:after {
+    content: "";
+    flex: 0 0 31%;
+  }
 }
+
 
 @media screen and (max-width: $mobile-card-breakpoint){
-    .column{
-
-        .cardwrap{
-
-            .row{
-
-                li{
-                    width: 48%;
-
-                    &:nth-child(2n){
-                        margin-left: 4%;
-                    }
-                }
-            }
-        }
+  .cards.grid {
+    li.card-collection{
+      width: 48%;
+      margin: 0 0 2.5%;
     }
+  }
 }
 
 @media screen and (max-width: $mobile-card-breakpoint-2){
-    .column{
-
-        .cardwrap{
-
-            .row{
-
-                li{
-                    width: 100%;
-
-                    &:nth-child(2n){
-                        margin-left: 0;
-                    }
-                }
-            }
-        }
+  .cards.grid {
+    li.card-collection{
+      width: 100%;
+      margin: 0 0 2.5%;
     }
-}
-
-@media screen and (max-width: $mobile-max-width){
-    // .cardwrap{
-    //     padding: 0 6%;
-    // }
-}
-
-//_imageCardGrid media query
-@media screen and (max-width: $mobile-width-header) {
-    .image-card-grid {
-        .image-grid-column {
-            flex: 50%;
-            max-width: 50%;
-            width: 50%;
-        }
-    }
-}
-@media screen and (max-width: $mobile-width-400) {
-    .image-card-grid {
-        .image-grid-column {
-            flex: 100%;
-            max-width: 100%;
-            width: 100%;
-        }
-    }
-}
-
-//_imageCardGrid2 media query
-@media screen and (max-width: 1130px) {
-    .image-card-grid-2 .row .image-grid-2-card .description p {
-        -webkit-line-clamp: 10;
-    }
-}
-@media screen and (max-width: 1040px) {
-    .image-card-grid-2 .row .image-grid-2-card .description p {
-        -webkit-line-clamp: 9;
-    }
-}
-@media screen and (max-width: 955px) {
-    .image-card-grid-2 .row .image-grid-2-card .description p {
-        -webkit-line-clamp: 8;
-    }
-}
-@media screen and (max-width: 870px) {
-    .image-card-grid-2 .row .image-grid-2-card .description p {
-        -webkit-line-clamp: 7;
-    }
-}
-@media screen and (max-width: $mobile-width-header) { // 768
-    .image-card-grid-2 {
-        padding: 100px 8%;
-        .row {
-            flex-wrap: wrap;
-            margin-bottom: 0;
-            .image-grid-2-card {
-                margin: 0 0 20px;
-                width: 100%;
-                .description p {
-                    -webkit-line-clamp: 11;
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 550px) {
-    .image-card-grid-2 .row .image-grid-2-card .description p {
-        -webkit-line-clamp: 10;
-    }
-}
-@media screen and (max-width: 500px) {
-    .image-card-grid-2 .row .image-grid-2-card .description p {
-        -webkit-line-clamp: 9;
-    }
-}
-@media screen and (max-width: 455px) {
-    .image-card-grid-2 .row .image-grid-2-card .description p {
-        -webkit-line-clamp: 8;
-    }
-}
-@media screen and (max-width: 415px) {
-    .image-card-grid-2 .row .image-grid-2-card .description p {
-        -webkit-line-clamp: 7;
-    }
-}
-@media screen and (max-width: 370px) {
-    .image-card-grid-2 .row .image-grid-2-card .description p {
-        -webkit-line-clamp: 6;
-    }
-}
-@media screen and (max-width: 320px) {
-    .image-card-grid-2 .row .image-grid-2-card .description p {
-        -webkit-line-clamp: 5;
-    }
-}
-@media screen and (max-width: 280px) {
-    .image-card-grid-2 .row .image-grid-2-card .description p {
-        -webkit-line-clamp: 4;
-    }
+  }
 }
