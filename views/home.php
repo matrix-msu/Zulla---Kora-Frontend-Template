@@ -21,7 +21,7 @@
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>3.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
-                            <h3 class="card-title">Long Long Long Collection Title</h3>
+                            <h3 class="card-title">Example of a Longer Collection Title Looks Like This</h3>
                             <p class="card-desc">Lorem ipsum dolor sit amet.</p>
                         </div>
                     </a>
@@ -112,7 +112,7 @@
                             <p class="card-content">Metadata Content</p>
                             <p class="card-content">Other Metadata Content</p>
                             <p class="card-content">Metadata Content</p>
-                            <h4 class="card-title">Long Long Long Long Record Title</h4>
+                            <h4 class="card-title">Example of a Longer Record Title Looks Like This</h4>
                         </div>
                     </a>
                     <div class="overlay"></div>

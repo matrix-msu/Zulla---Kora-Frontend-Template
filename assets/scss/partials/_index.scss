@@ -109,7 +109,7 @@
         top: 48%;
         transition: all .2s ease-in-out;
         width: 50px;
-        z-index: 2;
+        z-index: 11;
         &:hover {
             cursor: pointer;
         }
@@ -145,13 +145,14 @@
       position: absolute;
       top: 40px;
       right: 6%;
-      width: 150px;
-      height: 82%;
+      width: 70px;
+      height: 95%;
+      z-index: 10;
     }
 }
 
 
-.search{ 
+.search{
     .searchwrap{
         margin: 0 auto;
         max-width: 1000px;
