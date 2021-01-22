@@ -119,7 +119,6 @@ main {									// content wrap
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 6%;
 }
 
 input:not([type]), input[type="email" i], input[type="number" i], input[type="password" i], input[type="tel" i], input[type="url" i], input[type="text" i] {
@@ -130,6 +129,11 @@ input:not([type]), input[type="email" i], input[type="number" i], input[type="pa
     font-family: montserratregular;
 }
 
+@media screen and (max-width: $mobile-card-breakpoint){
+    .container {
+      padding: 0 6%;
+    }
+}
 
 @media screen and (max-width: $mobile-width-header){
 		main {

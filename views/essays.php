@@ -1,4 +1,4 @@
-<div class="main">
+<div class="landing">
 	<div class="background"></div>
     <div class="container middlewrap">
         <h1>Essays</h1>
