@@ -88,8 +88,8 @@ li.card-records{
     a {
 
         img {
-          height: 200px;
-          width: 200px;
+          height: 100%;
+          width: 100%;
           object-fit: cover;
           position:absolute;
           border-radius: 5px;
@@ -157,6 +157,19 @@ li.card-records{
     content: "";
     flex: 0 0 31%;
   }
+  li.card-records{
+    width: 23.5%;
+    margin: 0 0 1.5%;
+    a {
+        img {
+          width: 100%;
+        }
+      }
+  }
+  &:after {
+    content: "";
+    flex: 0 0 23.5%;
+  }
 }
 
 
@@ -166,6 +179,10 @@ li.card-records{
       width: 48%;
       margin: 0 0 2.5%;
     }
+    li.card-records{
+      width: 32%;
+      margin: 0 0 1%;
+    }
   }
 }
 
@@ -174,6 +191,19 @@ li.card-records{
     li.card-collection{
       width: 100%;
       margin: 0 0 2.5%;
+    }
+    li.card-records{
+      width: 48%;
+      margin: 0 0 2%;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-width-400){
+  .cards.grid {
+    li.card-records{
+      width: 100%;
+      margin: 0 0 2%;
     }
   }
 }

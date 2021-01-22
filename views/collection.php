@@ -1,14 +1,14 @@
 <div class="landing">
 	<div class="background"></div>
     <div class="container middlewrap">
-        <h1>Collection Title</h1>
+        <h1>Single Collection Title</h1>
     </div>
     <div class="overlay"></div>
 </div>
 <!--  Collection Single Layout  -->
 <div class="collection-single container">
 	<div class="left">
-		<a href="" class="button-primary">View All Records</a>
+		<a href="<?php echo BASE_URL;?>collection-records" class="button-primary">View All Records</a>
 		<div class="metadata-wrap">
 			<div class="metadata">
 				<h5>Number of Records</h5>
@@ -43,7 +43,7 @@
     <div class="container collectionwrap">
 			<div class="wrap-header">
 				<h5>FEATURED RECORDS</h5>
-				<a class="button-tertiary">VIEW ALL</a>
+				<a href="<?php echo BASE_URL;?>collection-records" class="button-tertiary">VIEW ALL</a>
 			</div>
         <div class="cardwrap" id="cardwrap-records">
             <ul class="cards" id= "first">

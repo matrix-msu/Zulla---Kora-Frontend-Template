@@ -9,8 +9,10 @@
 <!--  Cards/Column container  -->
 <div class="card-slider featured-collections">
     <div class="container collectionwrap">
-        <h5>FEATURED COLLECTIONS</h5>
-        <div class="cardwrap" id="cardwrap-collections">
+        <div class="wrap-header">
+					<h5>FEATURED COLLECTIONS</h5>
+				</div>
+				<div class="cardwrap" id="cardwrap-collections">
             <ul class="cards">
                 <li class="card card-collection">
                     <a href="<?php echo BASE_URL;?>collection">
@@ -75,8 +77,8 @@
     </div>
 </div>
 
-<div class="all-collections container">
-        <div class="top">
+<div class="container">
+        <div class="title-and-filter">
 					<h5>ALL COLLECTIONS</h5>
 					<div class="search">
 						<form action="submit">
