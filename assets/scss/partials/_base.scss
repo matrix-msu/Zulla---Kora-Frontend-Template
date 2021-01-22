@@ -87,35 +87,6 @@ a {
     text-decoration: none;
 }
 
-span{
-    font-family: $bold;
-}
-
-ul {
-    font-family: $bold;
-}
-main {									// content wrap
-    max-width: 1000px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 100px 8%;
-
-    a {
-        color: $sub-base;
-    }
-
-    section {
-
-        p {
-            margin-bottom: 40px;
-            line-height: 2;
-
-            small {
-                font-size: 11px;
-            }
-        }
-    }
-}
 .container {
   max-width: 1000px;
   margin: 0 auto;

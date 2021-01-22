@@ -1,37 +1,3 @@
-// Collections //
-.all-collections {
-  .top {
-    margin-bottom: 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    h5 {
-      color: $base-light;
-    }
-    .search {
-      margin-right: -30px;
-      .search-field {
-        text-align: right;
-        height: 45px;
-        &:hover {
-        }
-        &::-webkit-input-placeholder {
-          opacity: .6;
-          font-family: $medium-italic;
-        }
-        &::-moz-placeholder {
-          opacity: .6;
-          font-family: $medium-italic;
-        }
-      }
-      .search-submit {
-        margin-left: 0;
-      }
-    }
-  }
-}
-
 // Collection Single //
 .collection-single {
   color: $base-light;
@@ -68,6 +34,11 @@
   }
 }
 
+// Collection Single Records //
+.collection-records {
+  margin-top: -130px;
+}
+
 @media screen and (max-width: $mobile-max-width){
   .collection-single {
     .left {
@@ -101,20 +72,6 @@
       .metadata-wrap {
         .metadata {
           width: 48%;
-        }
-      }
-    }
-  }
-
-  .all-collections {
-    .top {
-      h5 {
-        width: 100%;
-      }
-      .search {
-        margin: 10px 0 0 -10px;
-        .search-field {
-          width: 120px;
         }
       }
     }
