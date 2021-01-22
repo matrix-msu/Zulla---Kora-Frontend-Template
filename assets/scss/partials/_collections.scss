@@ -1,3 +1,4 @@
+// Collections //
 .all-collections {
   .top {
     margin-bottom: 12px;
@@ -31,8 +32,80 @@
   }
 }
 
+// Collection Single //
+.collection-single {
+  color: $base-light;
+  display: flex;
+  margin-top: -130px;
+  margin-bottom: 70px;
+  z-index: 3;
+  .left {
+    width: 33%;
+    .metadata-wrap {
+      margin: 50px 0 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      &:after {
+        content: "";
+        flex: 0 0 31%;
+      }
+      .metadata {
+        margin: 0 0 40px;
+        width: 100%;
+        p {
+          opacity: .7;
+        }
+      }
+    }
+  }
+  .right {
+    width: 66%;
+    p {
+      font-size: 18px;
+      line-height: 2;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-max-width){
+  .collection-single {
+    .left {
+      margin-right: 50px;
+      }
+    }
+}
+
+@media screen and (max-width: $mobile-width-header){
+  .collection-single {
+    display: block;
+    .left {
+      width: 100%;
+      margin-right: 0px;
+      .metadata-wrap {
+        margin: 50px 0 10px;
+        .metadata {
+          width: 31%;
+        }
+      }
+      }
+    .right {
+      width: 100%;
+    }
+  }
+}
 
 @media screen and (max-width: $mobile-card-breakpoint-2){
+  .collection-single {
+    .left {
+      .metadata-wrap {
+        .metadata {
+          width: 48%;
+        }
+      }
+    }
+  }
+
   .all-collections {
     .top {
       h5 {
@@ -42,17 +115,6 @@
         margin: 10px 0 0 -10px;
         .search-field {
           width: 120px;
-          &:hover {
-          }
-          &::-webkit-input-placeholder {
-
-          }
-          &::-moz-placeholder {
-
-          }
-        }
-        .search-submit {
-
         }
       }
     }

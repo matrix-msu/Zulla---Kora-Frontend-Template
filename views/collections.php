@@ -1,4 +1,4 @@
-<div class="main">
+<div class="landing">
 	<div class="background"></div>
     <div class="container middlewrap">
         <h1>Collections</h1>
@@ -13,7 +13,7 @@
         <div class="cardwrap" id="cardwrap-collections">
             <ul class="cards">
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>3.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -24,7 +24,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>4.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -42,7 +42,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>2.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -55,7 +55,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>1.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -88,7 +88,7 @@
         <div>
             <ul class="cards grid">
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>3.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -99,7 +99,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>4.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -117,7 +117,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>2.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -130,7 +130,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>1.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -143,7 +143,7 @@
                     <div class="overlay"></div>
                 </li>
 								<li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>5.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -156,7 +156,7 @@
                     <div class="overlay"></div>
                 </li>
 								<li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>3.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -167,7 +167,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>4.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -185,7 +185,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>2.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -198,7 +198,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>1.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -211,7 +211,7 @@
                     <div class="overlay"></div>
                 </li>
 								<li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>5.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -224,7 +224,7 @@
                     <div class="overlay"></div>
                 </li>
 								<li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>3.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -235,7 +235,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>4.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -253,7 +253,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>2.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -266,7 +266,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>1.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -279,7 +279,7 @@
                     <div class="overlay"></div>
                 </li>
 								<li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>5.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -292,7 +292,7 @@
                     <div class="overlay"></div>
                 </li>
 								<li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>3.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -303,7 +303,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>4.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -321,7 +321,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>2.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -334,7 +334,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>1.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>
@@ -347,7 +347,7 @@
                     <div class="overlay"></div>
                 </li>
 								<li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>collection">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>5.jpg">
                         <div class="card-component">
                             <p class="card-resource">117 Resources</p>

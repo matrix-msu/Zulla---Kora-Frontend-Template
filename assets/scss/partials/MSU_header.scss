@@ -12,7 +12,6 @@
 }
 #header-center-aligner {
   max-width: 1000px;
-  padding: 0 6%;
   margin: 0 auto;
   height: 60px;
   clear: both;
@@ -390,5 +389,11 @@
 		#search-tool-box {
 			margin-right: 12px;
 		}
+	}
+}
+
+@media screen and (max-width: $mobile-card-breakpoint){
+	#header-center-aligner {
+		padding: 0 6%;
 	}
 }
