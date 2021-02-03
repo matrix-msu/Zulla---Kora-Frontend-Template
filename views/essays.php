@@ -15,7 +15,7 @@
         <div class="cardwrap" id="cardwrap-collections">
             <ul class="cards">
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>3.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Example of a Longer Essay Title Looks Like This</h3>
@@ -25,7 +25,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>4.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Essay Title</h3>
@@ -42,7 +42,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>2.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Essay Title</h3>
@@ -54,7 +54,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>1.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Essay Title</h3>
@@ -86,7 +86,7 @@
         <div>
             <ul class="cards grid">
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>3.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Example of a Longer Essay Title Looks Like This</h3>
@@ -96,7 +96,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>4.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Essay Title</h3>
@@ -113,7 +113,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>2.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Essay Title</h3>
@@ -125,7 +125,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>1.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Essay Title</h3>
@@ -137,7 +137,7 @@
                     <div class="overlay"></div>
                 </li>
 								<li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>5.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Essay Title</h3>
@@ -149,7 +149,7 @@
                     <div class="overlay"></div>
                 </li>
 								<li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>3.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Example of a Longer Essay Title Looks Like This</h3>
@@ -159,7 +159,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>4.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Essay Title</h3>
@@ -176,7 +176,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>2.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Essay Title</h3>
@@ -188,7 +188,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>1.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Essay Title</h3>
@@ -200,7 +200,7 @@
                     <div class="overlay"></div>
                 </li>
 								<li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>5.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Essay Title</h3>
@@ -212,7 +212,7 @@
                     <div class="overlay"></div>
                 </li>
 								<li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>3.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Example of a Longer Essay Title Looks Like This</h3>
@@ -222,7 +222,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>4.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Essay Title</h3>
@@ -239,7 +239,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>2.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Essay Title</h3>
@@ -251,7 +251,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>1.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Essay Title</h3>
@@ -263,7 +263,7 @@
                     <div class="overlay"></div>
                 </li>
 								<li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>5.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Essay Title</h3>
@@ -275,7 +275,7 @@
                     <div class="overlay"></div>
                 </li>
 								<li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>3.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Example of a Longer Essay Title Looks Like This</h3>
@@ -285,7 +285,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>4.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Essay Title</h3>
@@ -302,7 +302,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>2.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Essay Title</h3>
@@ -314,7 +314,7 @@
                     <div class="overlay"></div>
                 </li>
                 <li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>1.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Essay Title</h3>
@@ -326,7 +326,7 @@
                     <div class="overlay"></div>
                 </li>
 								<li class="card card-collection">
-                    <a href="">
+                    <a href="<?php echo BASE_URL;?>essay">
                         <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>5.jpg">
                         <div class="card-component">
                             <h3 class="card-title">Essay Title</h3>
