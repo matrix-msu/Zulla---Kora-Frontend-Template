@@ -2,44 +2,45 @@
     max-width: unset;
     padding: 0;
     width: 100%;
+    margin: 45px 0;
     .image-carousel-fig {
         background: $base-dark;
-        height: 640px;
+        height: 70vh; 
         margin: 0;
         position: relative;
         .arrow-left,
         .arrow-right {
             background: url(../images/template_images/chevron-down.svg) no-repeat;
-            background-color: $base-dark;
-            background-position: 16px;
+            background-position: 16.5px;
             border: none;
             border-radius: 50%;
             box-shadow: 0 10px 40px 0 rgba(13, 18, 48, 0.4);
             height: 45px;
             margin-top: -22.5px; // height is explicitly defined, so I can just subtract half of it to correct for top:50%; resulting in perfect vertical centering
             position: absolute;
-            top: 50%; // space above element is 50%, so the element needs to be moved up to correct
             transition: 400ms;
             width: 45px;
-            z-index: 2;
+            z-index: 3;
             &:hover {
                 cursor: pointer;
-                background-color: $sub-base;
+                background-color: $accent;
             }
             &:focus {
                 outline: none;
             }
         }
         .arrow-right {
-            margin-right: 40px;
-            right: 0;
+            right: 15px;
+            bottom: 15px;
             transform: rotate(-90deg);
         }
         .arrow-left {
-            margin-left: 40px;
+            right: 65px;
+            bottom: 15px;
             transform: rotate(90deg);
         }
         .carousel-title {
+            display: none;
             color: $base-light;
             height: min-content;
             margin: 0 auto;
@@ -66,7 +67,7 @@
                 }
             }
             .description {
-                display: -webkit-box;
+                display: none;
                 font-size: 14px;
                 line-height: 1.5em;
                 margin: 20px 0;
@@ -78,6 +79,7 @@
             }
             .carousel-link {
                 text-decoration: none;
+                display: none;
             }
         }
         .carousel-display {
@@ -94,7 +96,7 @@
             z-index: 0;
         }
         .carousel-controls {
-            height: 80px;
+            height: 42px;
             margin: 0 auto;
             position: absolute;
             right: 0;
@@ -103,25 +105,36 @@
             text-align: center;
             z-index: 2;
             .dot {
-                background-color: rgba(240, 240, 240, 0.2);
                 border-radius: 50%;
+                border: 2px solid $base-light;
                 display: inline-block;
-                height: 10px;
-                width: 10px;
+                height: 6px;
+                width: 6px;
+                margin: 0 1px;
+                transition: all .2s ease-in-out;
                 &:hover {
                     cursor: pointer;
+                    background-color: $base-light;
                 }
             }
             .active {
                 background-color: #F0F0F0;
             }
         }
-        .overlay {
-            background-color: rgba(13,18,48,0.7);
+
+        .fullscreen {
+          left: 30px;
+          bottom: 0;
+          z-index: 9;
+          cursor: pointer;
+        }
+        .carousel-overlay {
+            background-image: linear-gradient(180deg, $base-dark-clear 70%, $base-dark-translucent-90 100%);
             height: 100%;
             position: absolute;
             top: 0;
-            width: 100%;
+            left: -100vw;
+            width: 200vw;
             z-index: 1;
         }
     }
@@ -135,13 +148,12 @@
     .image-carousel .image-carousel-fig {
         height: 280px;
         .arrow-right {
-            right: -30px;
         }
         .arrow-left {
-            left: -30px;
         }
         .carousel-controls {
             height: 35px;
+            bottom: -55px;
         }
         .carousel-title {
             .title {

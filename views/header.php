@@ -16,7 +16,7 @@
                     <li class="nav-item"><a class="nav-link unselected" id="index" href="<?php echo BASE_URL;?>collections">COLLECTIONS</a></li>
 
                     <li class="nav-item" id="drop-link">
-                    <a class="nav-link unselected" id="more">About</a>
+                    <a href="<?php echo BASE_URL;?>about" class="nav-link unselected" id="more">About</a>
                     	<span class="drop-carat">
                             <img src="<?php echo BASE_TEMPLATE_IMAGE_URL;?>chevron-down.svg" alt="down-arrow.svg"/>
 						</span>

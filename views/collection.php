@@ -1,6 +1,6 @@
-<div class="landing">
+<div class="landing force-below">
 	<div class="background"></div>
-    <div class="container middlewrap">
+    <div class="container middlewrap reduced">
         <h1>Single Collection Title</h1>
     </div>
     <div class="overlay"></div>

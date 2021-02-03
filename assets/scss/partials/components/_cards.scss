@@ -19,6 +19,8 @@ li.card-collection{
     transition: all 0.2s ease-in-out;
     position: relative;
     a {
+      text-decoration: none;
+      font-family: inherit;
         img {
           height: 245px;
           width: 410px;
@@ -28,6 +30,7 @@ li.card-collection{
         }
         p {
             letter-spacing: 0;
+            line-height: 1.5;
         }
         .card-component{
             padding-left: 30px;

@@ -11,6 +11,11 @@ $mobile-button-breakpoint:  768px;
 $mobile-button-breakpoint-2:450px;
 
 // font variables
+$title-bold: 'HKBold';
+$title-bold-italic: 'HKBoldItalic';
+$title-medium: 'HKMedium';
+$title-medium-italic: 'HKMediumItalic';
+
 $bold: 'HKBold';
 $bold-italic: 'HKBoldItalic';
 $medium: 'HKMedium';
@@ -37,19 +42,19 @@ h1,h2,h3,h4,h5,p,a,b{
 }
 
 h1 {
-    font-family: $bold;
+    font-family: $title-bold;
     font-size: 54px;
     font-weight: normal;
 }
 
 h2 {
-    font-family: $bold;
+    font-family: $title-bold;
     font-size: 54px;
     font-weight: normal;
 }
 
 h3 {
-    font-family: $bold;
+    font-family: $title-bold;
     font-size: 34px;
     font-weight: normal;
 }
@@ -71,10 +76,12 @@ h5 {
 P {
     font-family: $medium;
     font-size: 16px;
+    line-height: 2;
 }
 
 b {
     font-family: $bold;
+    font-weight: normal;
 }
 
 i {
@@ -91,6 +98,11 @@ a {
   max-width: 1000px;
   margin: 0 auto;
 }
+
+.force-below {
+  z-index: -1;
+}
+
 
 input:not([type]), input[type="email" i], input[type="number" i], input[type="password" i], input[type="tel" i], input[type="url" i], input[type="text" i] {
     padding: 0;

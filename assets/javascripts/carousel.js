@@ -1,31 +1,15 @@
 var images = {
     '1': {
-        'image': BASE_TEMPLATE_IMAGE_URL+'Images/Home/maxresdefault.jpg',
-        'title': 'Title',
-        'description': 'Slide Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        'link': 'Link to Someplace',
-        'linkLocation': '#'
+        'image': BASE_TEMPLATE_IMAGE_URL+'1.jpg',
     },
     '2': {
-        'image': BASE_TEMPLATE_IMAGE_URL+'Images/Home/nature1.jpg',
-        'title': 'Image 2',
-        'description': 'This is the second of four images that were uploaded to test this page',
-        'link': 'This is a new link!',
-        'linkLocation': 'https://i.imgur.com/g3D5jNz.jpg'
+        'image': BASE_TEMPLATE_IMAGE_URL+'2.jpg',
     },
     '3': {
-        'image': BASE_TEMPLATE_IMAGE_URL+'Images/Home/yellowtrees.jpg',
-        'title': 'This is the third image',
-        'description': 'This is a different (shorter) description!',
-        'link': 'Another new link!',
-        'linkLocation': 'https://i.imgur.com/0XHcPko.jpg'
+        'image': BASE_TEMPLATE_IMAGE_URL+'3.jpg',
     },
     '4': {
-        'image': BASE_TEMPLATE_IMAGE_URL+'Images/Home/purplefields.jpg',
-        'title': 'Last Image',
-        'description': 'This is the last of the images uploaded for this demonstration!',
-        'link': 'Another newer link!!!',
-        'linkLocation': 'https://i.imgur.com/Cxagv.jpg'
+        'image': BASE_TEMPLATE_IMAGE_URL+'4.jpg',
     }
 }
 var dots = window.document.getElementsByClassName('dot')
