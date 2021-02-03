@@ -21,7 +21,7 @@ function showModal(i) {
         hidden_modals[i].style.display = 'block';
         hidden_modals[i].style.height = '100%';
         setTimeout(function(){
-            $('.modal-view').css('background', 'rgba(13, 18, 48, 0.7)');
+            $('.background').css('opacity', '1');
             setTimeout(function(){
                 hidden_modals[i].childNodes[1].style.marginTop = "15px";
                 height = modalImage.innerHeight();
@@ -61,7 +61,7 @@ function closeModal () {
     $(".config-table-modal").css('margin-top', '');
     $(".modal-wrap").css('margin-top', '');
     setTimeout(function(){
-        $('.modal-view').css('background', 'rgba(13, 18, 48, -0.3)');
+        $('.background').css('opacity', '0');
         setTimeout(function(){
             $(".modal-view").css('display', '');
             $(".modal-view").css('height', '');

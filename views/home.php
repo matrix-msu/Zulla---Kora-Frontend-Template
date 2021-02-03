@@ -243,7 +243,7 @@
 
 <div class="container search">
     <div class="searchwrap">
-        <p>START YOUR SEARCH</p>
+        <h5>START YOUR SEARCH</h5>
         <div class="search-box">
 	        <div class="background"></div>
 	        <div class="search-contents">
