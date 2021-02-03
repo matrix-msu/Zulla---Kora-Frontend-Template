@@ -17,6 +17,7 @@ $GLOBALS['routes'] = array(
     'collection-records' => 'collection-records.php',
     'drawers' => 'components/drawers.php',
     'essays' => 'essays.php',
+    'essay' => 'essay.php',
     'fullRecord' => 'components/fullrecord.php',
     'tabs' => 'components/tabs.php',
     'modal' => 'components/modal.php',
