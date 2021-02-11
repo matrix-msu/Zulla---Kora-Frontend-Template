@@ -1,5 +1,5 @@
 <div class="landing">
-	<div class="background"></div>
+	<div class="landing-background"></div>
     <div class="container middlewrap">
         <h1>Single Collection Title</h1>
     </div>
@@ -9,7 +9,7 @@
 <div class="container collection-records">
         <div class="title-and-filter">
 					<h5>157 Records</h5>
-					<div class="search">
+					<div class="search-filter">
 						<form action="submit">
 								<input class="search-field" type="text" name="searchbar" placeholder="Find a Record"/>
 								<input class="search-submit" type="submit" alt="search.svg" />

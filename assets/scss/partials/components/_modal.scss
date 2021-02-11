@@ -176,12 +176,6 @@ a.modal {
 }
 
 //textModal.scss file
-.text-modal-text {
-    color: $sub-base;
-    &:hover {
-        cursor: pointer;
-    }
-}
 
 .text-modal {
     align-items: center;
@@ -195,69 +189,68 @@ a.modal {
     width: 100%;
     z-index: 9999;
     .canvas {
-        background: $base-light;
+        background: $base-dark-translucent-90;
         box-shadow: 0 25px 33px 0 rgba(0,0,0,0.05);
-        margin: 0 auto;
-        max-width: 650px;
+        color: $base-light;
+        margin: auto;
+        height: 100%;
+        width: 100%;
         opacity: 0;
-        padding: 20px;
         position: relative;
-        text-align: center;
         transition: 200ms;
+        overflow: scroll;
         div {
         }
         .close {
             background: $base-dark;
-            border-radius: 50%;
+            border: 2px solid $accent-translucent-25;
             box-shadow: 0 4px 16px 0 rgba(0,0,0,0.05);
             margin: 0;
-            padding: 15px;
-            position: absolute;
+            padding: 15px 18px;
+            position: fixed;
             top: 20px;
-            right: 30px;
+            right: 20px;
             transition: 400ms;
             &:hover {
-                background-color: $sub-base;
-                box-shadow: 0 12px 13px 0 rgba(30,30,30,0.05);
+                background-color: $accent-translucent-25;
+                border: 2px solid $accent;
                 cursor: pointer;
             }
         }
         .body {
-            max-height: 70%;
-            overflow-y: auto;
-            overflow-x: hidden;
+          height: 100%;
+          overflow: scroll;
+          padding: 50px;
             .title {
-                margin-top: 10%;
-                h2 {
-                    font-size: 2em;
-                }
+              max-width: 1200px;
+              margin: 0 auto 30px;
             }
             .description {
-                line-height: 1.8;
-                margin: 5% 8% 0;
+
             }
         }
         .buttons {
-            margin-top: 35px;
-            p {
-                transition: 400ms;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            padding: 20px;
+            bottom: 0;
+            right: 0;
+            background: $base-dark-translucent-90;
+            border-radius: 20px 0 0 0;
+            a {
+             right: 0;
             }
-            p:hover {
-                box-shadow: 0 12px 13px 0 rgba(30,30,30,0.05);
-                cursor: pointer;
-                opacity: 0.7;
-            }
-            .yes {
-                background: $base-dark;
-                box-shadow: 0 2px 3px 0 rgba(30,30,30,0.05);
-                color: $base-light;
-                display: inline-block;
-                padding: 15px 70px;
-            }
-            .no {
-                color: $base-dark;
-                margin: 3% auto;
-                width: min-content;
+            .reset {
+              margin: 0 40px 0 20px;
+              font-family: $bold;
+              font-size: 14px;
+              letter-spacing: 3.5px;
+              text-transform: uppercase;
+              transition: .2s ease-in-out;
+              &:hover {
+                color: $accent;
+              }
             }
         }
     }
@@ -281,6 +274,20 @@ a.modal {
     margin: 0 auto;
     z-index: 1001;
     }
+
+.text-modal {
+    .canvas {
+
+      .buttons {
+          flex-wrap: wrap;
+          justify-content: center;
+
+          .reset {
+            margin: 0 0 20px 0;
+          }
+        }
+      }
+    }
 }
 
 //textModal.scss media query
@@ -290,7 +297,7 @@ a.modal {
             margin-top: 50px;
         }
         .buttons {
-            bottom: 25px;
+
             .yes {
                 padding: 15px 35px;
             }

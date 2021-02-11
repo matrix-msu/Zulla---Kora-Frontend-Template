@@ -1,5 +1,5 @@
 <div class="landing">
-	<div class="background"></div>
+	<div class="landing-background"></div>
     <div class="container middlewrap">
         <h1>Collections</h1>
     </div>
@@ -80,7 +80,7 @@
 <div class="container">
         <div class="title-and-filter">
 					<h5>ALL COLLECTIONS</h5>
-					<div class="search">
+					<div class="search-filter">
 						<form action="submit">
 								<input class="search-field" type="text" name="searchbar" placeholder="Find a Collection"/>
 								<input class="search-submit" type="submit" alt="search.svg" />
