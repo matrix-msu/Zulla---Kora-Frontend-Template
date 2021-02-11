@@ -1,5 +1,5 @@
 <div class="landing">
-	<div class="background"></div>
+	<div class="landing-background"></div>
     <div class="container middlewrap">
         <h1>About</h1>
     </div>

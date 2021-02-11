@@ -1,5 +1,5 @@
 <div class="landing">
-	<div class="background"></div>
+	<div class="landing-background"></div>
     <div class="container middlewrap">
         <h1>Followed by some brief about information, or site tagline.</h1>
         <p>Site Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -241,7 +241,7 @@
     </div>
 </div>
 
-<div class="container search">
+<div class="container search-home">
     <div class="searchwrap">
         <h5>START YOUR SEARCH</h5>
         <div class="search-box">

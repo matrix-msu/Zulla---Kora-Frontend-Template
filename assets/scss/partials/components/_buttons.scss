@@ -2,16 +2,20 @@
   letter-spacing: 3.5px;
   display: block;
   color: $accent;
+  background: $base-dark-translucent-15;
   border: 2px solid $accent-translucent-25;
   font-family: $medium;
   transition: border 0.2s;
   text-decoration: none;
+  line-height: 1;
   padding: 15px 20px;
   white-space: nowrap;
   width: fit-content;
   text-transform: uppercase;
+  text-align: center;
   &:hover {
     border: 2px solid $accent;
+    background: $accent-translucent-25;
   }
 }
 

@@ -208,7 +208,7 @@ $(window).resize(function() { // make main content responsive when filter is vis
     }
 });
 
-$("li.filter-cat").click(function() { // toggle show/hide filter-by submenus
-    $(this).find("span:first").toggleClass("show");
-    $(this).next().toggleClass("show");
-});
+//$("li.filter-cat").click(function() { // toggle show/hide filter-by submenus
+//  $(this).find("span:first").toggleClass("show");
+//    $(this).next().toggleClass("show");
+//});

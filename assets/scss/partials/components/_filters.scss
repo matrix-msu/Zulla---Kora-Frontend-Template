@@ -8,7 +8,7 @@
   h5 {
     color: $base-light;
   }
-  .search {
+  .search-filter {
     margin-right: -30px;
     .search-field {
       text-align: right;
@@ -27,6 +27,53 @@
     .search-submit {
       margin-left: 0;
     }
+  }
+  form {
+      position: relative;
+
+      .search-field{
+         background: transparent;
+          color: $base-light;
+          float: left;
+          font-size: 16px;
+          height: 50px;
+          margin: 0;
+          outline: none;
+          padding-left: 10px;
+          transition: all 0.2s ease;
+          width: calc(100% - 82px);
+
+          &:hover{
+
+          }
+          &:focus-within{
+
+          }
+
+          input {
+              margin-left: 10px;
+          }
+      }
+
+      .search-submit{
+          border: none;
+          background-color: transparent;
+          background-image: url(../images/template_images/search.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          color: transparent;
+          cursor: pointer;
+          height: 50px;
+          margin-left: 10px;
+          outline: none;
+          text-decoration: none;
+          transition: opacity 0.3s ease;
+          width: 50px;
+
+          &:hover{
+              opacity: 0.9;
+          }
+      }
   }
 }
 

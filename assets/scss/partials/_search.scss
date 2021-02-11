@@ -1,19 +1,29 @@
-.search{
+.landing {
+  .search {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.search-main{
+  margin: 0;
+  width: calc(100% - 200px);
 
    form {
        position: relative;
 
        .search-field{
           background: transparent;
+          border: none;
+          border-bottom: 2px $accent solid;
            color: $base-light;
            float: left;
-           font-size: 16px;
+           font-size: 28px;
            height: 50px;
            margin: 0;
            outline: none;
-           padding-left: 10px;
            transition: all 0.2s ease;
-           width: calc(100% - 82px);
+           width: 100%;
 
            &:hover{
 
@@ -23,7 +33,7 @@
            }
 
            input {
-               margin-left: 10px;
+             width: 100%;
            }
        }
 
@@ -33,10 +43,11 @@
            background-image: url(../images/template_images/search.svg);
            background-position: center;
            background-repeat: no-repeat;
+           background-size: 20px;
            color: transparent;
            cursor: pointer;
            height: 50px;
-           margin-left: 10px;
+           margin-left: -50px;
            outline: none;
            text-decoration: none;
            transition: opacity 0.3s ease;
@@ -47,6 +58,12 @@
            }
        }
    }
+}
+
+.button-primary {
+  &.filter {
+
+  }
 }
 
 //_searchResults.scss file
@@ -92,20 +109,21 @@ main.search-results {
     transition: 400ms;
 }
 .filter-menu {
-    background-color: #fcfcfc;
-    border: 2px solid rgba(26,26,26,0.05);
-    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.05);
     box-sizing: border-box;
-    height: 100%;
-    overflow: auto;
-    position: absolute;
-    top: 0;
-    left: -270px;
-    bottom: 0;
-    padding: 20px;
     transition: 400ms;
-    width: 258px;
     z-index: 3;
+    columns: 4 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+
+      @for $i from 1 through 36 {
+      div:nth-child(#{$i}) {
+        $h: (random(400) + 100) + px;
+        height: $h;
+        line-height: $h;
+      }
+    }
     h3 {
         font-size: 20px;
         padding: 10px 0;
@@ -120,14 +138,16 @@ main.search-results {
     ul {
         list-style: none;
         padding: 0;
+
         li.filter-cat {
             cursor: pointer;
-            font-family: montserratregular;
+            font-family: $bold;
             font-size: 16px;
             padding: 15px 0;
             position: relative;
             transition: 200ms;
             z-index: 0;
+            width: 30%;
             span img {
                     margin-bottom: 2px;
             }
@@ -138,8 +158,14 @@ main.search-results {
     }
 }
 ul#submenu {
-    display: none;
     font-size: 16px;
+    width: 33%;
+    width: 200px;
+    display: inline-block;
+    h5 {
+      margin-bottom: 15px;
+      opacity: .5;
+    }
     li {
         padding: 3px 0;
         label {
@@ -147,7 +173,6 @@ ul#submenu {
             display: block;
             position: relative;
             padding-left: 35px;
-            margin-bottom: 12px;
             -webkit-user-select: none;
             -moz-user-select: none;
             -ms-user-select: none;
@@ -160,14 +185,16 @@ ul#submenu {
             p {
                 font-size: 14px;
                 font-weight: 300;
-                padding-top: 5px;
+                padding-top: 4px;
+                line-height: 1;
+                margin-bottom: 10px;
 
                 em {
                     font-style: normal;
                 }
             }
             span {
-                border: 1px solid #1A1A1A;
+                border: 1px solid $accent-translucent-25;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -177,11 +204,11 @@ ul#submenu {
         }
         label:hover input ~ span {
             /* on mouse-over, change background color */
-            background-color: #ccc;
+            background-color: $accent-translucent-25;
         }
         label input:checked ~ span {
             /* when checked, add background color */
-            background-color: $sub-base;
+            background-color: $accent-translucent-90;
             box-shadow: 0 3px 5px 0 rgba(0,0,0,0.05);
             border: none;
         }
@@ -197,8 +224,8 @@ ul#submenu {
         }
         label input:checked ~ p {
             /* change label text color when checked */
-            color: $sub-base;
-            font-weight: 500;
+            color: $accent;
+            font-family: $bold;
         }
         label span:after {
             /* style the checkmark/indicator */
@@ -706,9 +733,7 @@ span.align-right.show {
         width: 500px;
     }
     .filter-menu.show {
-        height: 500px;
-        top: 100px;
-        left: 0;
+
     }
 }
 @media screen and (max-width: 770px){
@@ -729,6 +754,26 @@ span.align-right.show {
     }
 }
 @media screen and (max-width: 620px) {
+  .landing {
+    .search {
+      flex-wrap: wrap;
+    }
+  }
+
+  .search-main{
+    width: 100%;
+  }
+
+  .button-primary {
+    &.filter {
+      width: 100%;
+      margin-top: 20px !important;
+    }
+  }
+
+
+
+
     #searchResults div#search-result-wrap #search-result-table {
         margin-left: 135px;
         table thead tr th:first-child,
@@ -820,8 +865,7 @@ span.align-right.show {
             padding-top: 15px;
         }
     }
-    .filter-menu.show {
-        top: 75px;
+    .filter-menu {
     }
 }
 @media screen and (max-width: 415px) {
